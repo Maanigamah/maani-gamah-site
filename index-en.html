@@ -1,31 +1,146 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>MAANI GAMAH Logistics</title>
-  <meta name="description" content="MAANI GAMAH Logistics provides sea freight, air freight and logistics solutions.">
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maani Al-Qimah Logistics Services</title>
 
-<body class="theme-navy">
-<header class="site-header">
-  <div class="container header-inner">
-    <strong>MAANI GAMAH</strong>
-    <nav class="nav">
-      <a href="index.html">AR</a>
-    </nav>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800;900&family=Reem+Kufi+Fun:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* small EN tweaks without breaking the shared stylesheet */
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    .brand-name{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-inner">
+    <div class="brand">
+      <div class="brand-badge">MG</div>
+      <div class="brand-name">MAANI AL-QIMAH</div>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index-en.html#services">Services</a></li>
+      <li><a href="index-en.html#about">About</a></li>
+      <li><a href="index-en.html#process">Process</a></li>
+      <li><a href="services.html">AR Services Page</a></li>
+      <li><a href="contact.html">Contact (AR)</a></li>
+      <li><a class="lang-pill" href="index.html">AR</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <span class="hero-kicker">Integrated Logistics Solutions</span>
+    <h1 class="hero-title">MAANI AL-QIMAH</h1>
+    <h2 class="hero-sub">Logistics Services</h2>
+    <p>
+      Sea, land, and air freight solutions with tracking and full follow-up until delivery.
+    </p>
   </div>
 </header>
 
-<section class="hero">
-  <div class="container hero-inner">
-    <h1>Reliable logistics solutions for your business</h1>
-    <p>Sea freight, air freight and import solutions.</p>
+<section>
+  <div class="container">
+    <div class="main-visual">
+      <img src="assets/images/home.jpg" alt="Logistics">
+      <div class="overlay">
+        <strong>End-to-End Service</strong>
+        <span>One solution for all your logistics needs</span>
+      </div>
+    </div>
   </div>
 </section>
 
-<footer class="footer">
-  <p>© MAANI GAMAH Logistics</p>
+<section id="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Services</h2>
+      <p>Flexible freight solutions across your operations</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="photo-icon"><img src="assets/images/sea.jpg" alt=""></div>
+        <div>
+          <h3>Sea Freight</h3>
+          <p>Container and cargo shipping with full tracking.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="photo-icon"><img src="assets/images/land.jpg" alt=""></div>
+        <div>
+          <h3>Land Freight</h3>
+          <p>Safe transportation with committed schedules.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="photo-icon"><img src="assets/images/air.jpg" alt=""></div>
+        <div>
+          <h3>Air Freight</h3>
+          <p>Fast shipping for urgent and sensitive shipments.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-title">
+      <h2>About</h2>
+      <p>Specialized in freight and supply chain coordination</p>
+    </div>
+
+    <div class="about-wrap">
+      <div class="about-image">
+        <img src="assets/images/about.jpg" alt="">
+      </div>
+
+      <div class="card">
+        <p>
+          We provide integrated logistics solutions including sea, land, and air freight,
+          customs clearance support, and continuous follow-up until final delivery.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="process">
+  <div class="container">
+    <div class="section-title">
+      <h2>Process</h2>
+      <p>A clear workflow from request to delivery</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">Request</div>
+      <div class="step">Pricing</div>
+      <div class="step">Execution</div>
+      <div class="step">Tracking</div>
+      <div class="step">Shipping</div>
+      <div class="step">Delivery</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> MAANI AL-QIMAH – All rights reserved
+    <div class="mini">maani-gamah.com</div>
+  </div>
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
