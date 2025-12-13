@@ -1,10 +1,8 @@
-/* ================= ROOT ================= */
 :root{
   --navy:#0b2a5b;
   --navy2:#123f83;
   --mint:#6dd6a8;
   --white:#ffffff;
-  --muted:rgba(255,255,255,.85);
 }
 
 *{
@@ -13,7 +11,6 @@
   padding:0;
 }
 
-/* ================= BODY ================= */
 body{
   font-family:"Cairo","Tajawal",Arial,sans-serif;
   background:radial-gradient(circle at top right,#1a3f73,#0b2a5b 60%);
@@ -21,6 +18,7 @@ body{
   line-height:2;
 }
 
+/* ====== LAYOUT ====== */
 .container{
   width:min(1140px,92%);
   margin:auto;
@@ -30,14 +28,14 @@ section{
   padding:90px 0;
 }
 
-/* ================= NAVBAR ================= */
+/* ====== NAVBAR ====== */
 .navbar{
   position:sticky;
   top:0;
   z-index:1000;
   background:rgba(11,42,91,.9);
   backdrop-filter:blur(10px);
-  border-bottom:1px solid rgba(255,255,255,.12);
+  border-bottom:1px solid rgba(255,255,255,.15);
 }
 
 .nav-inner{
@@ -50,7 +48,6 @@ section{
 .logo{
   font-size:26px;
   font-weight:900;
-  letter-spacing:1px;
 }
 
 .nav-links{
@@ -71,9 +68,9 @@ section{
   opacity:1;
 }
 
-/* ================= HERO ================= */
+/* ====== HERO ====== */
 .hero{
-  min-height:80vh;
+  min-height:85vh;
   display:flex;
   align-items:center;
   background:
@@ -94,7 +91,22 @@ section{
   opacity:.9;
 }
 
-/* ================= MAIN VISUAL ================= */
+/* ====== TITLES ====== */
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.section-title h2{
+  font-size:42px;
+  font-weight:800;
+}
+
+.section-title p{
+  font-size:20px;
+}
+
+/* ====== MAIN IMAGE ====== */
 .main-visual{
   position:relative;
   border-radius:28px;
@@ -108,7 +120,7 @@ section{
   object-fit:cover;
 }
 
-.main-visual .overlay{
+.overlay{
   position:absolute;
   inset:0;
   background:linear-gradient(90deg,rgba(11,42,91,.85),rgba(11,42,91,.35));
@@ -118,35 +130,11 @@ section{
   padding:40px;
 }
 
-.main-visual .overlay strong{
-  font-size:34px;
-}
-
-.main-visual .overlay span{
-  font-size:20px;
-  opacity:.9;
-}
-
-/* ================= SECTION TITLES ================= */
-.section-title{
-  text-align:center;
-  margin-bottom:40px;
-}
-
-.section-title h2{
-  font-size:42px;
-  font-weight:800;
-}
-
-.section-title p{
-  font-size:20px;
-}
-
-/* ================= SERVICES ================= */
+/* ====== SERVICES ====== */
 .services-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:20px;
+  gap:24px;
 }
 
 .service-card{
@@ -156,7 +144,6 @@ section{
   padding:30px;
   display:flex;
   gap:18px;
-  align-items:flex-start;
 }
 
 .photo-icon{
@@ -164,9 +151,6 @@ section{
   height:90px;
   border-radius:18px;
   overflow:hidden;
-  flex-shrink:0;
-  background:rgba(255,255,255,.08);
-  box-shadow:0 12px 30px rgba(0,0,0,.25);
 }
 
 .photo-icon img{
@@ -175,7 +159,7 @@ section{
   object-fit:cover;
 }
 
-/* ================= ABOUT ================= */
+/* ====== ABOUT ====== */
 .about-wrap{
   display:grid;
   grid-template-columns:1.1fr 0.9fr;
@@ -184,6 +168,7 @@ section{
 }
 
 .about-image img{
+  width:100%;
   border-radius:22px;
   max-height:420px;
   object-fit:cover;
@@ -195,7 +180,7 @@ section{
   padding:34px;
 }
 
-/* ================= PROCESS ================= */
+/* ====== PROCESS ====== */
 .process{
   background:rgba(255,255,255,.05);
 }
@@ -208,55 +193,23 @@ section{
 
 .step{
   background:rgba(255,255,255,.08);
-  padding:20px;
+  padding:22px;
   border-radius:16px;
   text-align:center;
   font-size:18px;
-  font-weight:600;
-}
-
-/* ================= CONTACT FORM ================= */
-.contact-form{
-  max-width:600px;
-  margin:auto;
-  display:flex;
-  flex-direction:column;
-  gap:16px;
-}
-
-.contact-form input,
-.contact-form textarea{
-  padding:14px;
-  border-radius:12px;
-  border:none;
-  font-size:16px;
-}
-
-.contact-form textarea{
-  min-height:140px;
-}
-
-.contact-form button{
-  padding:16px;
-  border-radius:14px;
-  border:none;
-  background:var(--mint);
-  font-size:18px;
   font-weight:700;
-  cursor:pointer;
 }
 
-/* ================= FOOTER ================= */
+/* ====== FOOTER ====== */
 footer{
   padding:30px 0;
   text-align:center;
   opacity:.85;
 }
 
-/* ================= RESPONSIVE ================= */
+/* ====== RESPONSIVE ====== */
 @media(max-width:900px){
   .hero-title{font-size:42px}
   .hero-sub{font-size:22px}
   .about-wrap{grid-template-columns:1fr}
-  .section-title h2{font-size:30px}
 }
