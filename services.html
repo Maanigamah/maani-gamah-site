@@ -1,0 +1,40 @@
+<section class="process-icons">
+  <div class="container">
+    <div class="section-title">
+      <h2>عملية الخدمة</h2>
+    </div>
+
+    <div class="icon-grid">
+      <div class="icon-box">طلب الخدمة</div>
+      <div class="icon-box">تقدير الأسعار</div>
+      <div class="icon-box">طلب التصنيع</div>
+
+      <div class="icon-box">متابعة التصنيع</div>
+      <div class="icon-box">فحص الجودة</div>
+      <div class="icon-box">يوم الشحن</div>
+
+      <div class="icon-box">التخليص الجمركي</div>
+      <div class="icon-box">تسليم الشحنة</div>
+    </div>
+  </div>
+</section>
+.icon-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.icon-box{
+  background:rgba(255,255,255,.08);
+  border-radius:22px;
+  padding:50px 20px;
+  text-align:center;
+  font-size:22px;
+  font-weight:700;
+}
+
+@media(max-width:900px){
+  .icon-grid{
+    grid-template-columns:1fr;
+  }
+}
