@@ -2,111 +2,247 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>مؤسسة معاني القمة للخدمات اللوجستية</title>
 
-  <title>معاني القمة للخدمات اللوجستية | شحن بحري وجوي واستيراد</title>
-  <meta name="description" content="معاني القمة للخدمات اللوجستية تقدم حلول شحن بحري وجوي، خدمات الاستيراد، وحلول لوجستية متكاملة للشركات والمستوردين." />
+  <style>
+    :root{
+      --navy:#0b2a5b;
+      --navy2:#123f83;
+      --mint:#6dd6a8;
+      --white:#ffffff;
+      --muted:rgba(255,255,255,.85);
+    }
 
-  <link rel="canonical" href="https://www.maani-gamah.com/" />
-  <meta name="theme-color" content="#0B1C2D" />
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Cairo","Tajawal",Arial,sans-serif;
+      background: linear-gradient(180deg,var(--navy2),var(--navy));
+      color:var(--white);
+      line-height:1.9;
+    }
 
-  <meta property="og:title" content="معاني القمة للخدمات اللوجستية" />
-  <meta property="og:description" content="حلول شحن واستيراد ولوجستيات متكاملة." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.maani-gamah.com/" />
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
 
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    .container{
+      width:min(1140px,92%);
+      margin:auto;
+    }
+
+    /* ===== HERO ===== */
+    .hero{
+      position:relative;
+      min-height:80vh;
+      display:flex;
+      align-items:center;
+      background:
+        linear-gradient(90deg,rgba(11,42,91,.9),rgba(11,42,91,.6)),
+        url("DATA_URI_HERO_IMAGE");
+      background-size:cover;
+      background-position:center;
+    }
+
+    .hero h1{
+      font-size:clamp(28px,4vw,44px);
+      margin-bottom:16px;
+    }
+
+    .hero p{
+      max-width:600px;
+      color:var(--muted);
+    }
+
+    /* ===== SECTION ===== */
+    section{padding:70px 0}
+    .section-title{
+      text-align:center;
+      margin-bottom:40px;
+    }
+    .section-title h2{
+      font-size:clamp(22px,3vw,34px);
+      margin:0;
+    }
+    .section-title p{
+      max-width:700px;
+      margin:12px auto 0;
+      color:var(--muted);
+    }
+
+    /* ===== SERVICES ===== */
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:20px;
+    }
+
+    .service{
+      background:rgba(255,255,255,.08);
+      border-radius:18px;
+      padding:20px;
+      display:flex;
+      gap:14px;
+      align-items:center;
+    }
+
+    .service img{
+      width:64px;
+      height:64px;
+      border-radius:50%;
+      object-fit:cover;
+      border:4px solid rgba(11,42,91,.6);
+      background:var(--mint);
+    }
+
+    /* ===== ABOUT ===== */
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:24px;
+      align-items:center;
+    }
+
+    .about img{
+      border-radius:22px;
+    }
+
+    /* ===== PROCESS ===== */
+    .process{
+      background:rgba(255,255,255,.05);
+      border-radius:24px;
+      padding:30px;
+    }
+
+    .steps{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+
+    .step{
+      text-align:center;
+    }
+
+    .step .icon{
+      width:70px;
+      height:70px;
+      margin:auto;
+      border-radius:50%;
+      background:var(--mint);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-bottom:12px;
+      color:#0b2a5b;
+      font-weight:700;
+    }
+
+    footer{
+      padding:30px 0;
+      text-align:center;
+      opacity:.8;
+      font-size:14px;
+    }
+
+    @media(max-width:900px){
+      .about{grid-template-columns:1fr}
+    }
+  </style>
 </head>
 
-<body class="theme-navy">
+<body>
 
-<header class="site-header">
-  <div class="container header-inner">
-    <div class="brand">
-      <span class="brand-mark">مق</span>
-      <div>
-        <strong>معاني القمة</strong><br>
-        <small>الخدمات اللوجستية</small>
-      </div>
-    </div>
-
-    <nav class="nav">
-      <a href="#about">من نحن</a>
-      <a href="#services">الخدمات</a>
-      <a href="#process">آلية العمل</a>
-      <a href="#contact">تواصل</a>
-      <a class="lang" href="index-en.html">EN</a>
-    </nav>
+<!-- HERO -->
+<header class="hero">
+  <div class="container">
+    <h1>حلول لوجستية متكاملة من الطلب حتى التسليم</h1>
+    <p>
+      مؤسسة معاني القمة تقدم خدمات الشحن البحري والبري والجوي،
+      مع متابعة التصنيع وفحص الجودة والتخليص الجمركي.
+    </p>
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-overlay"></div>
-  <div class="container hero-inner">
-    <div>
-      <h1>نوصّل شحناتك بثقة ونبني حلولًا لوجستية تدعم أعمالك</h1>
+<!-- SERVICES -->
+<section>
+  <div class="container">
+    <div class="section-title">
+      <h2>خدماتنا</h2>
+      <p>نقدّم مجموعة متكاملة من الحلول اللوجستية باحترافية عالية</p>
+    </div>
+
+    <div class="services">
+      <div class="service">
+        <img src="DATA_URI_SEA" alt="الشحن البحري">
+        <div>
+          <h3>الشحن البحري</h3>
+          <p>حلول شحن بحري للحاويات والبضائع مع متابعة كاملة.</p>
+        </div>
+      </div>
+
+      <div class="service">
+        <img src="DATA_URI_LAND" alt="الشحن البري">
+        <div>
+          <h3>الشحن البري</h3>
+          <p>نقل بري آمن داخل وخارج المدن مع التزام بالمواعيد.</p>
+        </div>
+      </div>
+
+      <div class="service">
+        <img src="DATA_URI_AIR" alt="الشحن الجوي">
+        <div>
+          <h3>الشحن الجوي</h3>
+          <p>شحن جوي سريع للطلبات العاجلة والبضائع الحساسة.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+  <div class="container">
+    <div class="section-title">
+      <h2>من نحن</h2>
+    </div>
+
+    <div class="about">
+      <img src="DATA_URI_ABOUT" alt="من نحن">
       <p>
-        معاني القمة للخدمات اللوجستية تقدم حلول شحن واستيراد متكاملة
-        للشركات والمستوردين مع التزام بالدقة والجودة.
+        مؤسسة معاني القمة للخدمات اللوجستية، نعمل على تقديم حلول
+        احترافية متكاملة تشمل الشحن والتوريد والمتابعة والتخليص
+        وصولًا إلى تسليم الشحنة لموقع العميل.
       </p>
-      <a href="#contact" class="btn primary">اطلب عرض أسعار</a>
     </div>
   </div>
 </section>
 
-<section id="about" class="section">
+<!-- PROCESS -->
+<section>
   <div class="container">
-    <h2>من نحن</h2>
-    <p>
-      معاني القمة للخدمات اللوجستية شركة متخصصة في الشحن والنقل الدولي،
-      نعمل على تسهيل عمليات الاستيراد والتصدير من خلال حلول ذكية
-      تعتمد على التخطيط والمتابعة المستمرة.
-    </p>
-  </div>
-</section>
+    <div class="section-title">
+      <h2>عملية الخدمة</h2>
+    </div>
 
-<section id="services" class="section soft">
-  <div class="container">
-    <h2>خدماتنا</h2>
-    <div class="grid">
-      <div class="card">🛳️ الشحن البحري</div>
-      <div class="card">✈️ الشحن الجوي</div>
-      <div class="card">📦 خدمات الاستيراد</div>
-      <div class="card">🔧 الحلول اللوجستية</div>
+    <div class="process">
+      <div class="steps">
+        <div class="step"><div class="icon">1</div>طلب الخدمة</div>
+        <div class="step"><div class="icon">2</div>تقدير الأسعار</div>
+        <div class="step"><div class="icon">3</div>طلب التصنيع</div>
+        <div class="step"><div class="icon">4</div>متابعة التصنيع</div>
+        <div class="step"><div class="icon">5</div>فحص الجودة</div>
+        <div class="step"><div class="icon">6</div>يوم الشحن</div>
+        <div class="step"><div class="icon">7</div>التخليص الجمركي</div>
+        <div class="step"><div class="icon">8</div>تسليم الشحنة</div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="process" class="section">
-  <div class="container">
-    <h2>آلية العمل</h2>
-    <ol>
-      <li>استلام تفاصيل الشحنة</li>
-      <li>تقديم أفضل الخيارات</li>
-      <li>التنفيذ والمتابعة حتى التسليم</li>
-    </ol>
-  </div>
-</section>
-
-<section id="contact" class="section soft">
-  <div class="container">
-    <h2>تواصل معنا</h2>
-    <form id="contact-form">
-      <input name="name" placeholder="الاسم" required>
-      <input name="email" type="email" placeholder="البريد الإلكتروني" required>
-      <textarea name="message" placeholder="رسالتك" required></textarea>
-      <button class="btn primary">إرسال</button>
-      <p id="form-status"></p>
-    </form>
-  </div>
-</section>
-
-<footer class="footer">
-  <p>© <span id="year"></span> معاني القمة للخدمات اللوجستية</p>
+<footer>
+  © جميع الحقوق محفوظة – مؤسسة معاني القمة للخدمات اللوجستية
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
