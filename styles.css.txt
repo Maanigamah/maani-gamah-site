@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: "Tahoma", sans-serif;
+    background: #ffffff;
+    color: #001f4d;
+}
+
+/* Header */
+header {
+    background: #001f4d;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1505832018823-50331d70d237');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: white;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 15px 0;
+    color: white;
+}
+
+.cta-btn {
+    background: #003b9f;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* Sections */
+section {
+    padding: 70px 40px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #001f4d;
+}
+
+/* Services */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-box {
+    background: #f2f6ff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Gallery */
+.gallery-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery-container img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+/* Contact */
+.contact form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #001f4d;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+}
+
+/* Footer */
+footer {
+    background: #001f4d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
