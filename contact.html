@@ -3,76 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>تواصل معنا – مؤسسة معاني القمة</title>
+  <title>تواصل معنا | مؤسسة معاني القمة</title>
 
-  <style>
-    body{
-      margin:0;
-      font-family:"Cairo","Tajawal",Arial,sans-serif;
-      background:radial-gradient(circle at top right,#1a3f73,#0b2a5b 60%);
-      color:#fff;
-      line-height:2;
-    }
-
-    .container{
-      width:min(800px,92%);
-      margin:auto;
-      padding:80px 0;
-    }
-
-    .section-title{
-      text-align:center;
-      margin-bottom:40px;
-    }
-
-    .section-title h2{
-      font-size:40px;
-      font-weight:800;
-    }
-
-    .contact-form{
-      max-width:600px;
-      margin:auto;
-      display:flex;
-      flex-direction:column;
-      gap:16px;
-    }
-
-    .contact-form input,
-    .contact-form textarea{
-      padding:14px;
-      border-radius:12px;
-      border:none;
-      font-size:16px;
-    }
-
-    .contact-form textarea{
-      min-height:140px;
-    }
-
-    .contact-form button{
-      padding:16px;
-      border-radius:14px;
-      border:none;
-      background:#6dd6a8;
-      font-size:18px;
-      font-weight:700;
-      cursor:pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <div class="logo">معاني القمة</div>
+    <ul class="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="services.html">خدماتنا</a></li>
+      <li><a href="contact.html">تواصل معنا</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ================= CONTACT ================= -->
 <section>
   <div class="container">
     <div class="section-title">
       <h2>تواصل معنا</h2>
-      <p>نسعد بتواصلك معنا في أي وقت</p>
+      <p>نسعد بخدمتك والتواصل معك في أي وقت</p>
     </div>
 
-    <p style="text-align:center">
-      <strong>📞 رقم التواصل:</strong> 05XXXXXXXX
+    <p style="text-align:center;font-size:18px">
+      📞 رقم التواصل: <strong>05XXXXXXXX</strong>
     </p>
 
     <form class="contact-form">
@@ -84,5 +43,13 @@
   </div>
 </section>
 
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    © <span id="year"></span> جميع الحقوق محفوظة – مؤسسة معاني القمة
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
