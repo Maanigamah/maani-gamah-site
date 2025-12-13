@@ -1,0 +1,42 @@
+<section>
+  <div class="container">
+    <div class="section-title">
+      <h2>تواصل معنا</h2>
+      <p>نسعد بخدمتك والتواصل معك</p>
+    </div>
+
+    <p><strong>📞 رقم التواصل:</strong> 05XXXXXXXX</p>
+
+    <form class="contact-form">
+      <input type="text" placeholder="الاسم الكامل" required>
+      <input type="email" placeholder="البريد الإلكتروني" required>
+      <textarea placeholder="رسالتك" required></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </div>
+</section>
+.contact-form{
+  max-width:600px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding:14px;
+  border-radius:12px;
+  border:none;
+  font-size:16px;
+}
+
+.contact-form button{
+  padding:16px;
+  border-radius:14px;
+  border:none;
+  background:var(--mint);
+  font-size:18px;
+  font-weight:700;
+  cursor:pointer;
+}
