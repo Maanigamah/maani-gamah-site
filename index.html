@@ -1,189 +1,84 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>مؤسسة معاني القمة للخدمات اللوجستية</title>
 
-  <style>
-    :root{
-      --navy:#0b2a5b;
-      --navy2:#123f83;
-      --mint:#6dd6a8;
-      --white:#ffffff;
-      --muted:rgba(255,255,255,.85);
-    }
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
 
-    *{box-sizing:border-box}
+  <style>
+    /* في حال لم يُحمّل styles.css */
     body{
       margin:0;
-      font-family: "Cairo","Tajawal",Arial,sans-serif;
-      background: linear-gradient(180deg,var(--navy2),var(--navy));
-      color:var(--white);
-      line-height:1.9;
-    }
-
-    a{text-decoration:none;color:inherit}
-    img{max-width:100%;display:block}
-
-    .container{
-      width:min(1140px,92%);
-      margin:auto;
-    }
-
-    /* ===== HERO ===== */
-   .hero{
-  position:relative;
-  min-height:80vh;
-  display:flex;
-  align-items:center;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(11,42,91,.9),
-      rgba(11,42,91,.6)
-    ),
-    url("assets/images/hero.jpg");
-  background-size:cover;
-  background-position:center;
-    }
-    /* ===== SECTION ===== */
-    section{padding:70px 0}
-    .section-title{
-      text-align:center;
-      margin-bottom:40px;
-    }
-    .section-title h2{
-      font-size:clamp(22px,3vw,34px);
-      margin:0;
-    }
-    .section-title p{
-      max-width:700px;
-      margin:12px auto 0;
-      color:var(--muted);
-    }
-
-    /* ===== SERVICES ===== */
-    .services{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:20px;
-    }
-
-    .service{
-      background:rgba(255,255,255,.08);
-      border-radius:18px;
-      padding:20px;
-      display:flex;
-      gap:14px;
-      align-items:center;
-    }
-
-    .service img{
-      width:64px;
-      height:64px;
-      border-radius:50%;
-      object-fit:cover;
-      border:4px solid rgba(11,42,91,.6);
-      background:var(--mint);
-    }
-
-    /* ===== ABOUT ===== */
-    .about{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:24px;
-      align-items:center;
-    }
-
-    .about img{
-      border-radius:22px;
-    }
-
-    /* ===== PROCESS ===== */
-    .process{
-      background:rgba(255,255,255,.05);
-      border-radius:24px;
-      padding:30px;
-    }
-
-    .steps{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-      gap:20px;
-    }
-
-    .step{
-      text-align:center;
-    }
-
-    .step .icon{
-      width:70px;
-      height:70px;
-      margin:auto;
-      border-radius:50%;
-      background:var(--mint);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      margin-bottom:12px;
-      color:#0b2a5b;
-      font-weight:700;
-    }
-
-    footer{
-      padding:30px 0;
-      text-align:center;
-      opacity:.8;
-      font-size:14px;
-    }
-
-    @media(max-width:900px){
-      .about{grid-template-columns:1fr}
+      font-family:"Cairo","Tajawal",Arial,sans-serif;
     }
   </style>
 </head>
 
 <body>
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 <header class="hero">
   <div class="container">
-    <h1>حلول لوجستية متكاملة من الطلب حتى التسليم</h1>
+    <h1>حلول لوجستية متكاملة باحترافية عالية</h1>
     <p>
-      مؤسسة معاني القمة تقدم خدمات الشحن البحري والبري والجوي،
-      مع متابعة التصنيع وفحص الجودة والتخليص الجمركي.
+      نقدم مجموعة متكاملة من الحلول اللوجستية تشمل الشحن البحري والبري والجوي
+      مع متابعة دقيقة حتى تسليم الشحنة.
     </p>
   </div>
 </header>
 
-<!-- SERVICES -->
+<!-- ================= MAIN IMAGE ================= -->
 <section>
+  <div class="container">
+    <div class="main-visual">
+      <img src="assets/images/home.jpg" alt="الخدمات اللوجستية المتكاملة">
+      <div class="overlay">
+        <strong>تكامل الخدمات</strong>
+        <span>حل واحد يغطي جميع احتياجاتك اللوجستية</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
   <div class="container">
     <div class="section-title">
       <h2>خدماتنا</h2>
-      <p>نقدّم مجموعة متكاملة من الحلول اللوجستية باحترافية عالية</p>
+      <p>نقدّم حلول شحن متكاملة تناسب مختلف احتياجات الأعمال</p>
     </div>
 
-    <div class="services">
-      <div class="service">
-        <img src="DATA_URI_SEA" alt="الشحن البحري">
+    <div class="services-grid">
+      <!-- بحري -->
+      <div class="service-card">
+        <div class="photo-icon">
+          <img src="assets/images/sea.jpg" alt="الشحن البحري">
+        </div>
         <div>
           <h3>الشحن البحري</h3>
           <p>حلول شحن بحري للحاويات والبضائع مع متابعة كاملة.</p>
         </div>
       </div>
 
-      <div class="service">
-        <img src="DATA_URI_LAND" alt="الشحن البري">
+      <!-- بري -->
+      <div class="service-card">
+        <div class="photo-icon">
+          <img src="assets/images/land.jpg" alt="الشحن البري">
+        </div>
         <div>
           <h3>الشحن البري</h3>
-          <p>نقل بري آمن داخل وخارج المدن مع التزام بالمواعيد.</p>
+          <p>نقل بري آمن داخل وخارج المدن مع الالتزام بالمواعيد.</p>
         </div>
       </div>
 
-      <div class="service">
-        <img src="DATA_URI_AIR" alt="الشحن الجوي">
+      <!-- جوي -->
+      <div class="service-card">
+        <div class="photo-icon">
+          <img src="assets/images/air.jpg" alt="الشحن الجوي">
+        </div>
         <div>
           <h3>الشحن الجوي</h3>
           <p>شحن جوي سريع للطلبات العاجلة والبضائع الحساسة.</p>
@@ -193,50 +88,57 @@
   </div>
 </section>
 
-<!-- ABOUT -->
-<section>
+<!-- ================= ABOUT ================= -->
+<section id="about">
   <div class="container">
     <div class="section-title">
       <h2>من نحن</h2>
     </div>
 
-    <div class="about">
-      <img src="DATA_URI_ABOUT" alt="من نحن">
-      <p>
-        مؤسسة معاني القمة للخدمات اللوجستية، نعمل على تقديم حلول
-        احترافية متكاملة تشمل الشحن والتوريد والمتابعة والتخليص
-        وصولًا إلى تسليم الشحنة لموقع العميل.
-      </p>
-    </div>
-  </div>
-</section>
+    <div class="about-wrap">
+      <div class="about-image">
+        <img src="assets/images/about.jpg" alt="من نحن">
+      </div>
 
-<!-- PROCESS -->
-<section>
-  <div class="container">
-    <div class="section-title">
-      <h2>عملية الخدمة</h2>
-    </div>
-
-    <div class="process">
-      <div class="steps">
-        <div class="step"><div class="icon">1</div>طلب الخدمة</div>
-        <div class="step"><div class="icon">2</div>تقدير الأسعار</div>
-        <div class="step"><div class="icon">3</div>طلب التصنيع</div>
-        <div class="step"><div class="icon">4</div>متابعة التصنيع</div>
-        <div class="step"><div class="icon">5</div>فحص الجودة</div>
-        <div class="step"><div class="icon">6</div>يوم الشحن</div>
-        <div class="step"><div class="icon">7</div>التخليص الجمركي</div>
-        <div class="step"><div class="icon">8</div>تسليم الشحنة</div>
+      <div class="about-card">
+        <p>
+          مؤسسة معاني القمة للخدمات اللوجستية، مؤسسة متخصصة في تقديم حلول
+          لوجستية متكاملة تشمل الشحن البحري والبري والجوي، إضافة إلى
+          التخليص الجمركي والمتابعة حتى تسليم الشحنة لموقع العميل.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- ================= PROCESS ================= -->
+<section id="process" class="process">
+  <div class="container">
+    <div class="section-title">
+      <h2>عملية الخدمة</h2>
+    </div>
+
+    <div class="process-board">
+      <div class="steps">
+        <div class="step">طلب الخدمة</div>
+        <div class="step">تقدير الأسعار</div>
+        <div class="step">طلب التصنيع</div>
+        <div class="step">متابعة التصنيع</div>
+        <div class="step">فحص الجودة</div>
+        <div class="step">يوم الشحن</div>
+        <div class="step">التخليص الجمركي</div>
+        <div class="step">تسليم الشحنة</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
 <footer>
-  © جميع الحقوق محفوظة – مؤسسة معاني القمة للخدمات اللوجستية
+  <div class="container">
+    © جميع الحقوق محفوظة – مؤسسة معاني القمة للخدمات اللوجستية
+  </div>
 </footer>
 
 </body>
 </html>
-
