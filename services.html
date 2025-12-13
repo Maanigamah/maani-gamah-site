@@ -3,116 +3,51 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>خدماتنا | مؤسسة معاني القمة للخدمات اللوجستية</title>
+  <title>خدماتنا | مؤسسة معاني القمة</title>
 
-  <style>
-    :root{
-      --navy:#0b2a5b;
-      --navy2:#123f83;
-      --white:#ffffff;
-    }
-
-    *{box-sizing:border-box}
-
-    body{
-      margin:0;
-      font-family:"Cairo","Tajawal",Arial,sans-serif;
-      background:radial-gradient(circle at top right,#1a3f73,#0b2a5b 65%);
-      color:#fff;
-      line-height:2;
-    }
-
-    .container{
-      width:min(1140px,92%);
-      margin:auto;
-    }
-
-    section{
-      padding:90px 0;
-    }
-
-    /* ===== TITLE ===== */
-    .section-title{
-      text-align:center;
-      margin-bottom:50px;
-    }
-
-    .section-title h2{
-      font-size:42px;
-      font-weight:800;
-    }
-
-    /* ===== ICON GRID ===== */
-    .icon-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:30px;
-    }
-
-    .icon-box{
-      background:rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.15);
-      border-radius:24px;
-      padding:50px 25px;
-      text-align:center;
-      font-size:22px;
-      font-weight:700;
-      transition:.3s ease;
-    }
-
-    .icon-box:hover{
-      transform:translateY(-6px);
-      background:rgba(255,255,255,.14);
-    }
-
-    /* ===== RESPONSIVE ===== */
-    @media(max-width:900px){
-      .icon-grid{
-        grid-template-columns:1fr;
-      }
-
-      .section-title h2{
-        font-size:32px;
-      }
-    }
-
-    footer{
-      text-align:center;
-      padding:30px 0;
-      opacity:.85;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- ================= SERVICES PROCESS ================= -->
-<section>
-  <div class="container">
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <div class="logo">معاني القمة</div>
+    <ul class="nav-links">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="services.html">خدماتنا</a></li>
+      <li><a href="contact.html">تواصل معنا</a></li>
+    </ul>
+  </div>
+</nav>
 
+<!-- ================= SERVICES PROCESS ================= -->
+<section class="process">
+  <div class="container">
     <div class="section-title">
       <h2>عملية الخدمة</h2>
+      <p>نظام متكامل يضمن جودة الخدمة حتى التسليم</p>
     </div>
 
-    <div class="icon-grid">
-      <div class="icon-box">طلب الخدمة</div>
-      <div class="icon-box">تقدير الأسعار</div>
-      <div class="icon-box">طلب التصنيع</div>
-
-      <div class="icon-box">متابعة التصنيع</div>
-      <div class="icon-box">فحص الجودة</div>
-      <div class="icon-box">يوم الشحن</div>
-
-      <div class="icon-box">التخليص الجمركي</div>
-      <div class="icon-box">تسليم الشحنة</div>
-      <div class="icon-box">الدعم والمتابعة</div>
+    <div class="steps">
+      <div class="step">طلب الخدمة</div>
+      <div class="step">تقدير الأسعار</div>
+      <div class="step">طلب التصنيع</div>
+      <div class="step">متابعة التصنيع</div>
+      <div class="step">فحص الجودة</div>
+      <div class="step">يوم الشحن</div>
+      <div class="step">التخليص الجمركي</div>
+      <div class="step">تسليم الشحنة</div>
     </div>
-
   </div>
 </section>
 
+<!-- ================= FOOTER ================= -->
 <footer>
-  © <span id="year"></span> جميع الحقوق محفوظة – مؤسسة معاني القمة للخدمات اللوجستية
+  <div class="container">
+    © <span id="year"></span> جميع الحقوق محفوظة – مؤسسة معاني القمة
+  </div>
 </footer>
 
 <script src="script.js"></script>
