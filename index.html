@@ -5,269 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>مؤسسة معاني القمة للخدمات اللوجستية</title>
 
-  <!-- CSS -->
- 
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-<style>
-:root{
-  --navy:#0b2a5b;
-  --navy2:#123f83;
-  --mint:#6dd6a8;
-  --white:#ffffff;
-  --muted:rgba(255,255,255,.85);
-}
-*{box-sizing:border-box}
-.main-visual{
-  position:relative;
-  border-radius:28px;
-  overflow:hidden;
-  max-height:420px;
-}
+<body>
 
-.main-visual img{
-  width:100%;
-  height:420px;
-  object-fit:cover;
-}
-
-.main-visual .overlay{
-  position:absolute;
-  inset:0;
-  background:linear-gradient(
-    90deg,
-    rgba(11,42,91,.85),
-    rgba(11,42,91,.35)
-  );
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  padding:40px;
-}
-
-.main-visual .overlay strong{
-  font-size:34px;
-  margin-bottom:10px;
-}
-
-.main-visual .overlay span{
-  font-size:20px;
-  opacity:.9;
-}
-
-body{
-  <nav class="navbar">
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
   <div class="container nav-inner">
     <div class="logo">معاني القمة</div>
-
     <ul class="nav-links">
       <li><a href="#services">خدماتنا</a></li>
       <li><a href="#about">من نحن</a></li>
       <li><a href="#process">عملية الخدمة</a></li>
       <li><a href="contact.html">تواصل معنا</a></li>
+      <li><a href="index-en.html">EN</a></li>
     </ul>
   </div>
 </nav>
-  margin:0;
-  font-family:"Cairo","Tajawal",Arial,sans-serif;
-  background:
-    radial-gradient(
-      circle at top right,
-      #1a3f73,
-      #0b2a5b 60%
-    );
-  color:#ffffff;
-  line-height:2;
-}
-.container{width:min(1140px,92%);margin:auto}
-section{padding:70px 0}
-
-.hero{
-  min-height:80vh;
-  display:flex;
-  align-items:center;
-  background:
-    linear-gradient(90deg,rgba(11,42,91,.9),rgba(11,42,91,.6)),
-    url("assets/images/hero.jpg") center/cover no-repeat;
-}
- .hero .container{
-  max-width:700px;
-} 
-.hero-title{
-  font-size:72px;
-  font-weight:900;
-  letter-spacing:3px;
-  margin:0;
-}
-
-.hero-sub{
-  font-size:32px;
-  font-weight:600;
-  margin:10px 0 20px;
-  opacity:.9;
-}
-
-@media(max-width:900px){
-  .hero-title{font-size:42px}
-  .hero-sub{font-size:22px}
-}
-.section-title h2{
-  font-size:42px;
-  font-weight:800;
-}
-
-.section-title p{
-  font-size:20px;
-}
-
-@media(max-width:900px){
-  .section-title h2{
-    font-size:30px;
-  }
-}
-.services-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:20px;
-}
-.service-card{
-  background:rgba(255,255,255,.06);
-  border:1px solid rgba(255,255,255,.12);
-  border-radius:22px;
-  padding:30px;
-  display:flex;
-  gap:18px;
-  align-items:flex-start;
-}
-.photo-icon{
-  width:90px;
-  height:90px;
-  border-radius:18px;
-  overflow:hidden;
-  flex-shrink:0;
-  background:rgba(255,255,255,.08);
-  box-shadow:0 12px 30px rgba(0,0,0,.25);
-}
-  
-.photo-icon img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-
-h1,h2,h3{
-  font-weight:700;
-}
-
-p{
-  font-weight:400;
-}
-
-.about-wrap{
-  display:grid;
-  grid-template-columns:1.1fr 0.9fr;
-  gap:40px;
-  align-items:center;
-}
-
-.about-image img{
-  border-radius:22px;
-  max-height:420px;
-  object-fit:cover;
-}
-
-.about-card{
-  background:rgba(255,255,255,.06);
-  border-radius:22px;
-  padding:34px;
-}
-
-.process{
-  background:rgba(255,255,255,.05);
-}
-.steps{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:16px;
-}
-.step{
-  background:rgba(255,255,255,.08);
-  padding:20px;
-  border-radius:16px;
-  text-align:center;
-  font-size:18px;
-  font-weight:600;
-}
-
-@media(max-width:900px){
-  .about-wrap{
-    grid-template-columns:1fr;
-  }
-}
-
-footer{
-  padding:30px 0;
-  text-align:center;
-  opacity:.8;
-}
-  h1{font-size:46px}
-h2{font-size:34px}
-h3{font-size:22px}
-p{font-size:18px}
-  
-@media(max-width:900px){
-  h1{font-size:32px}
-  h2{font-size:26px}
-}
-</style>
-.navbar{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:rgba(11,42,91,.85);
-  backdrop-filter:blur(10px);
-  border-bottom:1px solid rgba(255,255,255,.12);
-}
-
-.nav-inner{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  height:72px;
-}
-
-.logo{
-  font-size:26px;
-  font-weight:800;
-  letter-spacing:1px;
-}
-
-.nav-links{
-  list-style:none;
-  display:flex;
-  gap:28px;
-  margin:0;
-  padding:0;
-}
-
-.nav-links a{
-  font-size:18px;
-  font-weight:600;
-  opacity:.9;
-}
-.nav-links a:hover{
-  opacity:1;
-}
-
-</head>
-
-<body>
 
 <!-- ================= HERO ================= -->
 <header class="hero">
-  <h1 class="hero-title">MAANI AL-QIMAH</h1>
-<h2 class="hero-sub">Logistics Services</h2>
+  <div class="container">
+    <h1 class="hero-title">MAANI AL-QIMAH</h1>
+    <h2 class="hero-sub">Logistics Services</h2>
     <p>
-      نقدم مجموعة متكاملة من الحلول اللوجستية تشمل الشحن البحري والبري والجوي
+
+   <h3>الشحن البحري</h3>
+          <p>حلول شحن بحري للحاوي
+      حلول لوجستية متكاملة تشمل الشحن البحري والبري والجوي
       مع متابعة دقيقة حتى تسليم الشحنة.
     </p>
   </div>
@@ -295,18 +62,16 @@ p{font-size:18px}
     </div>
 
     <div class="services-grid">
-      <!-- بحري -->
       <div class="service-card">
         <div class="photo-icon">
           <img src="assets/images/sea.jpg" alt="الشحن البحري">
         </div>
         <div>
-          <h3>الشحن البحري</h3>
-          <p>حلول شحن بحري للحاويات والبضائع مع متابعة كاملة.</p>
+      
+ ات والبضائع مع متابعة كاملة.</p>
         </div>
       </div>
 
-      <!-- بري -->
       <div class="service-card">
         <div class="photo-icon">
           <img src="assets/images/land.jpg" alt="الشحن البري">
@@ -317,7 +82,6 @@ p{font-size:18px}
         </div>
       </div>
 
-      <!-- جوي -->
       <div class="service-card">
         <div class="photo-icon">
           <img src="assets/images/air.jpg" alt="الشحن الجوي">
@@ -361,44 +125,42 @@ p{font-size:18px}
       <h2>عملية الخدمة</h2>
     </div>
 
-    <div class="process-board">
-      <div class="steps">
-        <div class="step">طلب الخدمة</div>
-        <div class="step">تقدير الأسعار</div>
-        <div class="step">طلب التصنيع</div>
-        <div class="step">متابعة التصنيع</div>
-        <div class="step">فحص الجودة</div>
-        <div class="step">يوم الشحن</div>
-        <div class="step">التخليص الجمركي</div>
-        <div class="step">تسليم الشحنة</div>
-      </div>
+    <div class="steps">
+      <div class="step">طلب الخدمة</div>
+      <div class="step">تقدير الأسعار</div>
+      <div class="step">طلب التصنيع</div>
+      <div class="step">متابعة التصنيع</div>
+      <div class="step">فحص الجودة</div>
+      <div class="step">يوم الشحن</div>
+      <div class="step">التخليص الجمركي</div>
+      <div class="step">تسليم الشحنة</div>
     </div>
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
-<footer>
-  <div class="container">
-    © جميع الحقوق محفوظة – مؤسسة معاني القمة للخدمات اللوجستية
-  </div>
-  <section>
+<!-- ================= CONTACT FORM ================= -->
+<section>
   <div class="container">
     <div class="section-title">
       <h2>راسلنا الآن</h2>
     </div>
 
     <form class="contact-form">
-      <input type="text" placeholder="اسمك">
-      <input type="email" placeholder="بريدك الإلكتروني">
-      <textarea placeholder="رسالتك"></textarea>
-      <button>إرسال</button>
+      <input type="text" placeholder="اسمك" required>
+      <input type="email" placeholder="بريدك الإلكتروني" required>
+      <textarea placeholder="رسالتك" required></textarea>
+      <button type="submit">إرسال</button>
     </form>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    © <span id="year"></span> جميع الحقوق محفوظة – مؤسسة معاني القمة للخدمات اللوجستية
   </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
-
