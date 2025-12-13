@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>דÚַהם ַבÞדֹ בב־ֿדַÊ ַבבזּ׃Êםֹ</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">דÚַהם ַבÞדֹ</div>
+        <nav>
+            <a href="#home">ַבֶׁם׃םֹ</a>
+            <a href="#about">דה הֽה</a>
+            <a href="#services">־ֿדַÊהַ</a>
+            <a href="#contact">Êזַױב דÚהַ</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>דÚַהם ַבÞדֹ בב־ֿדַÊ ַבבזּ׃Êםֹ</h1>
+            <p>ַבװׁםß ַבֳדֻב בֽבזב ַבװֽה ַבָֽׁם זַבּזם זַבַ׃Êםַֿׁ זַב־ֿדַÊ ַבבזּ׃Êםֹ</p>
+            <a href="#contact" class="cta-btn">Êזַױב דÚהַ ַבֲה</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <h2>דה הֽה</h2>
+        <p>
+            הֽה Ýם **דÚַהם ַבÞדֹ בב־ֿדַÊ ַבבזּ׃Êםֹ** הדÊבß ־ָֹׁ זַ׃Úֹ Ýם ÊÞֿםד ֽבזב װֽה
+            דÊßַדבֹ בבװׁßַÊ זַבֳÝַֿׁ. ה׃Úל בÊÞֿםד ־ֿדַÊ ַֽÊַׁÝםֹ Ýם ַבװֽה ַבָֽׁם זַבּזם¡
+            ז־ֿדַÊ ַבַ׃Êםַֿׁ¡ זֵַֹֿׁ ַבÚדבםַÊ ַבבזּ׃Êםֹ זÝÞ ֳÚבל ַבדÚַםםׁ בײדַה זױזב
+            װֽהַÊßד ֳָדַה ז׃ׁÚֹ זßÝֱַֹ.
+        </p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <h2>־ֿדַÊהַ</h2>
+
+        <div class="service-box">
+            <h3>ַבװֽה ַבָֽׁם</h3>
+            <p>־ֿדַÊ װֽה ָֽׁם ֿזבםֹ דזֻזÞֹ בּדםÚ ֳהזַÚ ַבָײֶַÚ.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>ַבװֽה ַבּזם</h3>
+            <p>ֽבזב װֽה ּזם ׃ׁםÚֹ זÝÚַבֹ דÚ ÊÛ״םֹ Úַבדםֹ.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>ַבַ׃Êםַֿׁ</h3>
+            <p>־ֿדַÊ ַ׃Êםַֿׁ ַֽÊַׁÝםֹ דÚ ֵַֹֿׁ װַדבֹ דה ַבדױֿׁ ֵבל זּוÊß.</p>
+        </div>
+
+        <div class="service-box">
+            <h3>ַבֽבזב ַבבזּ׃Êםֹ</h3>
+            <p>ֽבזב ׀ßםֹ בֵַֹֿׁ זÊהÙםד ÚדבםַÊ ַבהÞב זַבÊזׂםÚ.</p>
+        </div>
+    </section>
+
+    <!-- Shipping Images Section -->
+    <section class="gallery">
+        <h2>ַבװֽה ַבָֽׁם</h2>
+        <div class="gallery-container">
+            <img src="https://images.unsplash.com/photo-1505832018823-50331d70d237" alt="װֽה ָֽׁם">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd8249b9d" alt="װֽה ָֽׁם">
+            <img src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434" alt="װֽה ָֽׁם">
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact">
+        <h2>Êזַױב דÚהַ</h2>
+        <form id="contactForm" action="https://formspree.io/f/your_form_id" method="POST">
+            <input type="text" name="name" placeholder="ַבַ׃ד ַבßַדב" required>
+            <input type="email" name="email" placeholder="ַבָׁםֿ ַבֵבßÊׁזהם" required>
+            <textarea name="message" placeholder="ׁ׃ַבÊß" required></textarea>
+            <button type="submit">ֵׁ׃ַב</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 דÚַהם ַבÞדֹ בב־ֿדַÊ ַבבזּ׃Êםֹ - ּדםÚ ַבֽÞזÞ דֽÝזÙֹ</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
