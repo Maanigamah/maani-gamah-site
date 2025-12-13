@@ -5,13 +5,222 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>مؤسسة معاني القمة للخدمات اللوجستية</title>
 
-  <!-- Main Styles -->
-  <link rel="stylesheet" href="styles.css">
+  <style>
+  :root{
+    --navy:#0b2a5b;
+    --navy2:#123f83;
+    --mint:#6dd6a8;
+    --white:#ffffff;
+  }
+
+  *{box-sizing:border-box}
+
+  body{
+    margin:0;
+    font-family:"Cairo","Tajawal",Arial,sans-serif;
+    background:radial-gradient(circle at top right,#1a3f73,#0b2a5b 60%);
+    color:#fff;
+    line-height:2;
+  }
+
+  .container{
+    width:min(1140px,92%);
+    margin:auto;
+  }
+
+  /* ================= NAVBAR ================= */
+  .navbar{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(11,42,91,.9);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,.15);
+  }
+
+  .nav-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:72px;
+  }
+
+  .logo{
+    font-size:26px;
+    font-weight:900;
+  }
+
+  .nav-links{
+    list-style:none;
+    display:flex;
+    gap:28px;
+    margin:0;
+    padding:0;
+  }
+
+  .nav-links a{
+    color:#fff;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:600;
+    opacity:.9;
+  }
+
+  .nav-links a:hover{opacity:1}
+
+  /* ================= HERO ================= */
+  .hero{
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+    background:
+      linear-gradient(90deg,rgba(11,42,91,.9),rgba(11,42,91,.6)),
+      url("assets/images/hero.jpg") center/cover no-repeat;
+  }
+
+  .hero-title{
+    font-size:72px;
+    font-weight:900;
+    letter-spacing:3px;
+    margin:0;
+  }
+
+  .hero-sub{
+    font-size:32px;
+    font-weight:600;
+    margin:10px 0 20px;
+    opacity:.9;
+  }
+
+  /* ================= SECTIONS ================= */
+  section{padding:90px 0}
+
+  .section-title{
+    text-align:center;
+    margin-bottom:50px;
+  }
+
+  .section-title h2{
+    font-size:42px;
+    font-weight:800;
+  }
+
+  .section-title p{
+    font-size:20px;
+  }
+
+  /* ================= MAIN IMAGE ================= */
+  .main-visual{
+    position:relative;
+    border-radius:28px;
+    overflow:hidden;
+    max-height:420px;
+  }
+
+  .main-visual img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+  }
+
+  .overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(90deg,rgba(11,42,91,.85),rgba(11,42,91,.35));
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:40px;
+  }
+
+  /* ================= SERVICES ================= */
+  .services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:24px;
+  }
+
+  .service-card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:22px;
+    padding:30px;
+    display:flex;
+    gap:18px;
+  }
+
+  .photo-icon{
+    width:90px;
+    height:90px;
+    border-radius:18px;
+    overflow:hidden;
+    flex-shrink:0;
+  }
+
+  .photo-icon img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+  /* ================= ABOUT ================= */
+  .about-wrap{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:40px;
+    align-items:center;
+  }
+
+  .about-image img{
+    width:100%;
+    border-radius:22px;
+    max-height:420px;
+    object-fit:cover;
+  }
+
+  .about-card{
+    background:rgba(255,255,255,.06);
+    border-radius:22px;
+    padding:34px;
+  }
+
+  /* ================= PROCESS ================= */
+  .process{
+    background:rgba(255,255,255,.05);
+  }
+
+  .steps{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:16px;
+  }
+
+  .step{
+    background:rgba(255,255,255,.08);
+    padding:22px;
+    border-radius:16px;
+    text-align:center;
+    font-size:18px;
+    font-weight:700;
+  }
+
+  footer{
+    padding:30px 0;
+    text-align:center;
+    opacity:.85;
+  }
+
+  @media(max-width:900px){
+    .hero-title{font-size:42px}
+    .hero-sub{font-size:22px}
+    .about-wrap{grid-template-columns:1fr}
+  }
+  </style>
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- NAVBAR -->
 <nav class="navbar">
   <div class="container nav-inner">
     <div class="logo">معاني القمة</div>
@@ -20,147 +229,90 @@
       <li><a href="#about">من نحن</a></li>
       <li><a href="#process">عملية الخدمة</a></li>
       <li><a href="contact.html">تواصل معنا</a></li>
-      <li><a href="index-en.html">EN</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- ================= HERO ================= -->
+<!-- HERO -->
 <header class="hero">
   <div class="container">
     <h1 class="hero-title">MAANI AL-QIMAH</h1>
     <h2 class="hero-sub">Logistics Services</h2>
-    <p>
-
-   <h3>الشحن البحري</h3>
-          <p>حلول شحن بحري للحاوي
-      حلول لوجستية متكاملة تشمل الشحن البحري والبري والجوي
-      مع متابعة دقيقة حتى تسليم الشحنة.
-    </p>
+    <p>حلول لوجستية متكاملة تشمل الشحن البحري والبري والجوي مع متابعة دقيقة.</p>
   </div>
 </header>
 
-<!-- ================= MAIN IMAGE ================= -->
+<!-- MAIN IMAGE -->
 <section>
   <div class="container">
     <div class="main-visual">
-      <img src="assets/images/home.jpg" alt="الخدمات اللوجستية المتكاملة">
+      <img src="assets/images/home.jpg" alt="">
       <div class="overlay">
-        <strong>تكامل الخدمات</strong>
-        <span>حل واحد يغطي جميع احتياجاتك اللوجستية</span>
+        <strong style="font-size:34px">تكامل الخدمات</strong>
+        <span style="font-size:20px">حل واحد يغطي جميع احتياجاتك</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= SERVICES ================= -->
+<!-- SERVICES -->
 <section id="services">
   <div class="container">
     <div class="section-title">
       <h2>خدماتنا</h2>
-      <p>نقدّم حلول شحن متكاملة تناسب مختلف احتياجات الأعمال</p>
+      <p>حلول شحن متكاملة تناسب أعمالك</p>
     </div>
 
     <div class="services-grid">
       <div class="service-card">
-        <div class="photo-icon">
-          <img src="assets/images/sea.jpg" alt="الشحن البحري">
-        </div>
-        <div>
-      
- ات والبضائع مع متابعة كاملة.</p>
-        </div>
+        <div class="photo-icon"><img src="assets/images/sea.jpg"></div>
+        <div><h3>الشحن البحري</h3><p>حلول حاويات وبضائع.</p></div>
       </div>
 
       <div class="service-card">
-        <div class="photo-icon">
-          <img src="assets/images/land.jpg" alt="الشحن البري">
-        </div>
-        <div>
-          <h3>الشحن البري</h3>
-          <p>نقل بري آمن داخل وخارج المدن مع الالتزام بالمواعيد.</p>
-        </div>
+        <div class="photo-icon"><img src="assets/images/land.jpg"></div>
+        <div><h3>الشحن البري</h3><p>نقل بري آمن.</p></div>
       </div>
 
       <div class="service-card">
-        <div class="photo-icon">
-          <img src="assets/images/air.jpg" alt="الشحن الجوي">
-        </div>
-        <div>
-          <h3>الشحن الجوي</h3>
-          <p>شحن جوي سريع للطلبات العاجلة والبضائع الحساسة.</p>
-        </div>
+        <div class="photo-icon"><img src="assets/images/air.jpg"></div>
+        <div><h3>الشحن الجوي</h3><p>شحن سريع وعاجل.</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
+<!-- ABOUT -->
 <section id="about">
   <div class="container">
-    <div class="section-title">
-      <h2>من نحن</h2>
-    </div>
-
+    <div class="section-title"><h2>من نحن</h2></div>
     <div class="about-wrap">
-      <div class="about-image">
-        <img src="assets/images/about.jpg" alt="من نحن">
-      </div>
-
+      <div class="about-image"><img src="assets/images/about.jpg"></div>
       <div class="about-card">
-        <p>
-          مؤسسة معاني القمة للخدمات اللوجستية، مؤسسة متخصصة في تقديم حلول
-          لوجستية متكاملة تشمل الشحن البحري والبري والجوي، إضافة إلى
-          التخليص الجمركي والمتابعة حتى تسليم الشحنة لموقع العميل.
-        </p>
+        <p>مؤسسة متخصصة في الحلول اللوجستية المتكاملة والتخليص والمتابعة.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= PROCESS ================= -->
+<!-- PROCESS -->
 <section id="process" class="process">
   <div class="container">
-    <div class="section-title">
-      <h2>عملية الخدمة</h2>
-    </div>
-
+    <div class="section-title"><h2>عملية الخدمة</h2></div>
     <div class="steps">
       <div class="step">طلب الخدمة</div>
       <div class="step">تقدير الأسعار</div>
-      <div class="step">طلب التصنيع</div>
-      <div class="step">متابعة التصنيع</div>
-      <div class="step">فحص الجودة</div>
-      <div class="step">يوم الشحن</div>
-      <div class="step">التخليص الجمركي</div>
-      <div class="step">تسليم الشحنة</div>
+      <div class="step">متابعة التنفيذ</div>
+      <div class="step">الشحن</div>
+      <div class="step">التخليص</div>
+      <div class="step">التسليم</div>
     </div>
   </div>
 </section>
 
-<!-- ================= CONTACT FORM ================= -->
-<section>
-  <div class="container">
-    <div class="section-title">
-      <h2>راسلنا الآن</h2>
-    </div>
-
-    <form class="contact-form">
-      <input type="text" placeholder="اسمك" required>
-      <input type="email" placeholder="بريدك الإلكتروني" required>
-      <textarea placeholder="رسالتك" required></textarea>
-      <button type="submit">إرسال</button>
-    </form>
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
 <footer>
-  <div class="container">
-    © <span id="year"></span> جميع الحقوق محفوظة – مؤسسة معاني القمة للخدمات اللوجستية
-  </div>
+  © جميع الحقوق محفوظة – مؤسسة معاني القمة
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
