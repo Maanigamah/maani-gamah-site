@@ -1,6 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const yearEl = document.getElementById("year");
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
-  }
+// Footer year
+document.addEventListener("DOMContentLoaded", () => {
+  const y = document.getElementById("year");
+  if (y) y.textContent = new Date().getFullYear();
 });
