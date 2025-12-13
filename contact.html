@@ -3,53 +3,66 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>تواصل معنا | مؤسسة معاني القمة</title>
+  <title>تواصل معنا | معاني القمة</title>
 
+  <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- ====== NAVBAR ====== -->
 <nav class="navbar">
   <div class="container nav-inner">
     <div class="logo">معاني القمة</div>
     <ul class="nav-links">
       <li><a href="index.html">الرئيسية</a></li>
       <li><a href="services.html">خدماتنا</a></li>
+      <li><a href="index.html#about">من نحن</a></li>
       <li><a href="contact.html">تواصل معنا</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- ================= CONTACT ================= -->
+<!-- ====== CONTACT ====== -->
 <section>
   <div class="container">
     <div class="section-title">
       <h2>تواصل معنا</h2>
-      <p>نسعد بخدمتك والتواصل معك في أي وقت</p>
+      <p>يسعدنا استقبال استفساراتكم والرد عليها في أقرب وقت</p>
     </div>
 
-    <p style="text-align:center;font-size:18px">
-      📞 رقم التواصل: <strong>05XXXXXXXX</strong>
-    </p>
+    <div class="about-card" style="max-width:700px;margin:auto">
+      <p><strong>📞 رقم التواصل:</strong> 05XXXXXXXX</p>
+      <p><strong>📧 البريد الإلكتروني:</strong> info@maani-gamah.com</p>
 
-    <form class="contact-form">
-      <input type="text" placeholder="الاسم الكامل" required>
-      <input type="email" placeholder="البريد الإلكتروني" required>
-      <textarea placeholder="رسالتك" required></textarea>
-      <button type="submit">إرسال</button>
-    </form>
+      <form class="contact-form" style="margin-top:30px;display:flex;flex-direction:column;gap:16px">
+        <input type="text" placeholder="الاسم الكامل" required>
+        <input type="email" placeholder="البريد الإلكتروني" required>
+        <textarea rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+        <button style="
+          padding:16px;
+          border:none;
+          border-radius:14px;
+          background:var(--mint);
+          font-size:18px;
+          font-weight:700;
+          cursor:pointer;
+
+
+        ">إرسال</button>
+      </form>
+    </div>
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
+<!-- ====== FOOTER ====== -->
 <footer>
   <div class="container">
-    © <span id="year"></span> جميع الحقوق محفوظة – مؤسسة معاني القمة
+    © جميع الحقوق محفوظة – مؤسسة معاني القمة للخدمات اللوجستية
   </div>
 </footer>
 
-<script src="script.js"></script>
 </body>
-</html>
+</html
+>
