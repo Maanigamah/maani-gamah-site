@@ -55,6 +55,18 @@
 }
 
 body{
+  <nav class="navbar">
+  <div class="container nav-inner">
+    <div class="logo">معاني القمة</div>
+
+    <ul class="nav-links">
+      <li><a href="#services">خدماتنا</a></li>
+      <li><a href="#about">من نحن</a></li>
+      <li><a href="#process">عملية الخدمة</a></li>
+      <li><a href="contact.html">تواصل معنا</a></li>
+    </ul>
+  </div>
+</nav>
   margin:0;
   font-family:"Cairo","Tajawal",Arial,sans-serif;
   background:
@@ -80,9 +92,37 @@ section{padding:70px 0}
  .hero .container{
   max-width:700px;
 } 
-.section-title{text-align:center;margin-bottom:40px}
- section{
-  padding:90px 0;
+.hero-title{
+  font-size:72px;
+  font-weight:900;
+  letter-spacing:3px;
+  margin:0;
+}
+
+.hero-sub{
+  font-size:32px;
+  font-weight:600;
+  margin:10px 0 20px;
+  opacity:.9;
+}
+
+@media(max-width:900px){
+  .hero-title{font-size:42px}
+  .hero-sub{font-size:22px}
+}
+.section-title h2{
+  font-size:42px;
+  font-weight:800;
+}
+
+.section-title p{
+  font-size:20px;
+}
+
+@media(max-width:900px){
+  .section-title h2{
+    font-size:30px;
+  }
 }
 .services-grid{
   display:grid;
@@ -179,6 +219,44 @@ p{font-size:18px}
   h2{font-size:26px}
 }
 </style>
+.navbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:rgba(11,42,91,.85);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid rgba(255,255,255,.12);
+}
+
+.nav-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  height:72px;
+}
+
+.logo{
+  font-size:26px;
+  font-weight:800;
+  letter-spacing:1px;
+}
+
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:28px;
+  margin:0;
+  padding:0;
+}
+
+.nav-links a{
+  font-size:18px;
+  font-weight:600;
+  opacity:.9;
+}
+.nav-links a:hover{
+  opacity:1;
+}
 
 </head>
 
@@ -186,8 +264,8 @@ p{font-size:18px}
 
 <!-- ================= HERO ================= -->
 <header class="hero">
-  <div class="container">
-    <h1>حلول لوجستية متكاملة باحترافية عالية</h1>
+  <h1 class="hero-title">MAANI AL-QIMAH</h1>
+<h2 class="hero-sub">Logistics Services</h2>
     <p>
       نقدم مجموعة متكاملة من الحلول اللوجستية تشمل الشحن البحري والبري والجوي
       مع متابعة دقيقة حتى تسليم الشحنة.
@@ -303,10 +381,24 @@ p{font-size:18px}
   <div class="container">
     © جميع الحقوق محفوظة – مؤسسة معاني القمة للخدمات اللوجستية
   </div>
+  <section>
+  <div class="container">
+    <div class="section-title">
+      <h2>راسلنا الآن</h2>
+    </div>
+
+    <form class="contact-form">
+      <input type="text" placeholder="اسمك">
+      <input type="email" placeholder="بريدك الإلكتروني">
+      <textarea placeholder="رسالتك"></textarea>
+      <button>إرسال</button>
+    </form>
+  </div>
 </footer>
 
 </body>
 </html>
+
 
 
 
