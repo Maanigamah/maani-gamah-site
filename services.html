@@ -3,50 +3,182 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>خدماتنا | مؤسسة معاني القمة</title>
+  <title>خدماتنا | معاني القمة</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800;900&family=Reem+Kufi+Fun:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<!-- ================= NAVBAR ================= -->
 <nav class="navbar">
   <div class="container nav-inner">
-    <div class="logo">معاني القمة</div>
+    <div class="brand">
+      <div class="brand-badge">MG</div>
+      <div class="brand-name">معاني القمة</div>
+    </div>
+
     <ul class="nav-links">
       <li><a href="index.html">الرئيسية</a></li>
       <li><a href="services.html">خدماتنا</a></li>
+      <li><a href="index.html#about">من نحن</a></li>
       <li><a href="contact.html">تواصل معنا</a></li>
+      <li><a class="lang-pill" href="index-en.html">EN</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- ================= SERVICES PROCESS ================= -->
-<section class="process">
+<section>
   <div class="container">
     <div class="section-title">
-      <h2>عملية الخدمة</h2>
-      <p>نظام متكامل يضمن جودة الخدمة حتى التسليم</p>
+      <h2>خدماتنا</h2>
+      <p>حلول شحن متكاملة ودعم لوجستي شامل</p>
     </div>
 
-    <div class="steps">
-      <div class="step">طلب الخدمة</div>
-      <div class="step">تقدير الأسعار</div>
-      <div class="step">طلب التصنيع</div>
-      <div class="step">متابعة التصنيع</div>
-      <div class="step">فحص الجودة</div>
-      <div class="step">يوم الشحن</div>
-      <div class="step">التخليص الجمركي</div>
-      <div class="step">تسليم الشحنة</div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="photo-icon"><img src="assets/images/sea.jpg" alt=""></div>
+        <div>
+          <h3>الشحن البحري</h3>
+          <p>شحن حاويات وبضائع مع متابعة كاملة.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="photo-icon"><img src="assets/images/land.jpg" alt=""></div>
+        <div>
+          <h3>الشحن البري</h3>
+          <p>نقل بري آمن داخل وخارج المدن.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="photo-icon"><img src="assets/images/air.jpg" alt=""></div>
+        <div>
+          <h3>الشحن الجوي</h3>
+          <p>شحن سريع للطلبات العاجلة والبضائع الحساسة.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ================= FOOTER ================= -->
+<section class="process">
+  <div class="container">
+    <div class="section-title">
+      <h2>عملية الخدمة</h2>
+      <p>أيقونات كبيرة — كل سطر 3 أيقونات</p>
+    </div>
+
+    <div class="icon-grid">
+      <!-- 1 -->
+      <div class="icon-box">
+        <div class="icon-bubble">
+          <svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm0 2c-4.42 0-8 2-8 4v2h16v-2c0-2-3.58-4-8-4Z"/></svg>
+        </div>
+        <div>
+          <h4>طلب الخدمة</h4>
+          <p>استلام تفاصيل الشحنة والمتطلبات.</p>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="icon-box">
+        <div class="icon-bubble">
+          <svg viewBox="0 0 24 24"><path d="M7 2h10v2H7V2Zm12 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm0 14H5V8h14Z"/></svg>
+        </div>
+        <div>
+          <h4>تقدير الأسعار</h4>
+          <p>خيارات تكلفة ووقت مناسبة.</p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="icon-box">
+        <div class="icon-bubble">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Zm0 16H5V5h14Z"/></svg>
+        </div>
+        <div>
+          <h4>طلب التصنيع</h4>
+          <p>استكمال الإجراءات وبدء التنفيذ.</p>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="icon-box">
+        <div class="icon-bubble">
+          <svg viewBox="0 0 24 24"><path d="M3 3h18v2H3V3Zm2 4h14v14H5V7Zm2 2v10h10V9H7Z"/></svg>
+        </div>
+        <div>
+          <h4>متابعة التصنيع</h4>
+          <p>متابعة ميدانية وتحديثات.</p>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="icon-box">
+        <div class="icon-bubble">
+          <svg viewBox="0 0 24 24"><path d="M12 2 1 7l11 5 9-4.09V17h2V7L12 2Zm0 20-9-4V9l9 4 9-4v9l-9 4Z"/></svg>
+        </div>
+        <div>
+          <h4>فحص الجودة</h4>
+          <p>تحقق من سلامة وجودة البضائع.</p>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="icon-box">
+        <div class="icon-bubble">
+          <svg viewBox="0 0 24 24"><path d="M3 7h13v10H3V7Zm15 3h3l-2-3h-1v3Zm0 2v5h3v-5h-3Z"/></svg>
+        </div>
+        <div>
+          <h4>يوم الشحن</h4>
+          <p>تجهيز المستندات والتحميل.</p>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="icon-box">
+        <div class="icon-bubble">
+          <svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 9.74 8 11 4.6-1.26 8-6 8-11V5l-8-3Zm0 18c-3.1-1.2-6-4.8-6-9V6.3L12 4l6 2.3V11c0 4.2-2.9 7.8-6 9Z"/></svg>
+        </div>
+        <div>
+          <h4>التخليص الجمركي</h4>
+          <p>إجراءات الجمارك وإصدار البيان.</p>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="icon-box">
+        <div class="icon-bubble">
+          <svg viewBox="0 0 24 24"><path d="M20 8h-3V4H7v4H4v12h16V8Zm-5 0H9V6h6v2Z"/></svg>
+        </div>
+        <div>
+          <h4>تسليم الشحنة</h4>
+          <p>توصيل نهائي حسب موقع العميل.</p>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="icon-box">
+        <div class="icon-bubble">
+          <svg viewBox="0 0 24 24"><path d="M12 21s7-4.35 7-10A7 7 0 0 0 5 11c0 5.65 7 10 7 10Zm0-8a3 3 0 1 1 3-3 3 3 0 0 1-3 3Z"/></svg>
+        </div>
+        <div>
+          <h4>المتابعة والدعم</h4>
+          <p>تحديثات مستمرة حتى الإغلاق.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="container">
     © <span id="year"></span> جميع الحقوق محفوظة – مؤسسة معاني القمة
+    <div class="mini">maani-gamah.com</div>
   </div>
 </footer>
 
