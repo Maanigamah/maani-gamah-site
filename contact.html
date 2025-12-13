@@ -5,64 +5,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>تواصل معنا | معاني القمة</title>
 
-  <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800;900&family=Reem+Kufi+Fun:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<!-- ====== NAVBAR ====== -->
 <nav class="navbar">
   <div class="container nav-inner">
-    <div class="logo">معاني القمة</div>
+    <div class="brand">
+      <div class="brand-badge">MG</div>
+      <div class="brand-name">معاني القمة</div>
+    </div>
+
     <ul class="nav-links">
       <li><a href="index.html">الرئيسية</a></li>
       <li><a href="services.html">خدماتنا</a></li>
       <li><a href="index.html#about">من نحن</a></li>
       <li><a href="contact.html">تواصل معنا</a></li>
+      <li><a class="lang-pill" href="index-en.html">EN</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- ====== CONTACT ====== -->
 <section>
   <div class="container">
     <div class="section-title">
       <h2>تواصل معنا</h2>
-      <p>يسعدنا استقبال استفساراتكم والرد عليها في أقرب وقت</p>
+      <p>يسعدنا استقبال استفساراتكم والرد عليها</p>
     </div>
 
-    <div class="about-card" style="max-width:700px;margin:auto">
-      <p><strong>📞 رقم التواصل:</strong> 0596808368</p>
-      <p><strong>📧 البريد الإلكتروني:</strong> info@maani-gamah.com</p>
+    <div class="card contact-wrap">
+      <div>
+        <h3 style="margin:0 0 10px;font-weight:900">بيانات التواصل</h3>
+        <p style="margin:0 0 10px"><strong>📞</strong> 05XXXXXXXX</p>
+        <p style="margin:0 0 10px"><strong>📧</strong> info@maani-gamah.com</p>
+        <p class="muted" style="margin:0">أرسل رسالتك وسنتواصل معك.</p>
+      </div>
 
-      <form class="contact-form" style="margin-top:30px;display:flex;flex-direction:column;gap:16px">
+      <form class="contact-form">
         <input type="text" placeholder="الاسم الكامل" required>
         <input type="email" placeholder="البريد الإلكتروني" required>
-        <textarea rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
-        <button style="
-          padding:16px;
-          border:none;
-          border-radius:14px;
-          background:var(--mint);
-          font-size:18px;
-          font-weight:700;
-          cursor:pointer;
-
-
-        ">إرسال</button>
+        <textarea placeholder="اكتب رسالتك هنا..." required></textarea>
+        <button class="btn" type="submit">إرسال</button>
       </form>
     </div>
   </div>
 </section>
 
-<!-- ====== FOOTER ====== -->
 <footer>
   <div class="container">
-    © جميع الحقوق محفوظة – مؤسسة معاني القمة للخدمات اللوجستية
+    © <span id="year"></span> جميع الحقوق محفوظة – مؤسسة معاني القمة
+    <div class="mini">maani-gamah.com</div>
   </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
-</html
->
+</html>
