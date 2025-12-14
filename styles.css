@@ -323,6 +323,7 @@ section {
   position: relative;
   text-align: center;
   padding-top: 100px; /* مساحة للأيقونة */
+  z-index: 1;
 }
 
 /* الدائرة الخارجية (تدرج مطابق للصورة المرجعية) */
@@ -340,7 +341,7 @@ section {
     rgba(127, 218, 186, 0.35),
     rgba(127, 218, 186, 0.15)
   );
-  z-index: 0;
+  z-index: 1;
 }
 
 /* الدائرة الداخلية */
@@ -354,7 +355,7 @@ section {
   height: 68px;
   border-radius: 50%;
   background: #7fdaba;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* الأيقونة */
