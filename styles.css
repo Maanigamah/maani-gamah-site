@@ -208,6 +208,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  overflow: hidden;
 }
 
 .service-icon::before {
@@ -219,8 +220,6 @@ section {
   background: #0f3a5f; /* الحلقة الداخلية الداكنة */
   z-index: 0;
 }
-}
-
 .service-icon img {
   position: absolute;
   width: 58px;
