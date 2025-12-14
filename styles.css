@@ -89,40 +89,57 @@ body {
 
 /* ================= HERO ================= */
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  min-height: 85vh;
-  padding: 60px 5%;
-  gap: 40px;
-}
-
-.hero-content h1 {
-  font-size: 56px;
-  font-weight: 900;
-  margin-bottom: 10px;
-}
-
-.hero-content h2 {
-  font-size: 28px;
-  font-weight: 600;
-  opacity: .9;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  font-size: 18px;
-  max-width: 520px;
-  color: var(--text-light);
-}
-
-.hero-image img {
   width: 100%;
-  border-radius: 28px;
-  max-height: 420px;
-  object-fit: cover;
+  min-height: 75vh; /* نفس الإحساس بالصورة المرجعية */
+  background-image: url("../assets/images/about.jpg"); /* نفس الصورة */
+  background-size: cover;       /* مهم */
+  background-position: center;  /* مهم */
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
+/* طبقة خفيفة لقراءة النص (بدون تخريب الصورة) */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 40, 90, 0.45);
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  padding: 60px;
+  margin-right: 8%; /* RTL */
+  color: #fff;
+}
+
+.hero-overlay h1 {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.hero-overlay p {
+  font-size: 18px;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    min-height: 60vh;
+  }
+
+  .hero-overlay {
+    margin-right: 0;
+    padding: 40px 24px;
+    text-align: center;
+  }
+}
 /* ================= SECTIONS ================= */
 section {
   padding: 90px 0;
