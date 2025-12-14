@@ -299,3 +299,65 @@ section {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/* ================= PROCESS SECTION ================= */
+
+.process{
+  background:linear-gradient(180deg,#0b2a5b,#0e3a73);
+}
+
+.process-board{
+  background:rgba(255,255,255,.06);
+  border-radius:26px;
+  padding:50px 40px;
+  box-shadow:0 20px 60px rgba(0,0,0,.25);
+}
+.steps{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:28px;
+}
+.process-step{
+  background:rgba(255,255,255,.08);
+  border-radius:22px;
+  padding:28px 22px;
+  text-align:center;
+  transition:.3s ease;
+}
+
+.process-step:hover{
+  transform:translateY(-6px);
+  background:rgba(255,255,255,.12);
+}
+.icon-circle{
+  width:64px;
+  height:64px;
+  border-radius:50%;
+  margin:0 auto 16px;
+  background:linear-gradient(135deg,#6dd6a8,#3bbfa3);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.icon-circle svg{
+  width:28px;
+  height:28px;
+  fill:#0b2a5b;
+}
+.process-step h4{
+  font-size:18px;
+  font-weight:800;
+  margin-bottom:8px;
+}
+
+.process-step p{
+  font-size:15px;
+  opacity:.9;
+  line-height:1.8;
+}
+@media(max-width:900px){
+  .process-board{
+    padding:30px 20px;
+  }
+}
