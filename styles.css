@@ -208,7 +208,6 @@ section {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  overflow: hidden;
 }
 
 .service-icon::before {
@@ -218,13 +217,14 @@ section {
   height: 58px;
   border-radius: 50%;
   background: #0f3a5f; /* الحلقة الداخلية الداكنة */
+  z-index: 0;
 }
 }
 
 .service-icon img {
-  position: relative;
-  width: 52px;
-  height: 52px;
+  position: absolute;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   object-fit: cover;
   z-index: 1;
