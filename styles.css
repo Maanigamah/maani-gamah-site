@@ -365,7 +365,7 @@ section {
   transform: translateX(-50%);
   width: 36px;
   height: 36px;
-  z-index: 2;
+  z-index: 5;
   filter: brightness(0) saturate(100%) invert(14%) sepia(15%)
           saturate(1120%) hue-rotate(170deg);
 }
