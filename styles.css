@@ -208,6 +208,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  overflow: hidden;
 }
 
 .service-icon::before {
