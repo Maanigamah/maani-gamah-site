@@ -365,6 +365,7 @@ section {
   height: 28px;
   fill: #0b2a5b; /* كحلي واضح */
   z-index: 5;
+  position: absolute;
 }
 
 /* العنوان */
