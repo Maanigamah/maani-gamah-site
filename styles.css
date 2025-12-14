@@ -91,7 +91,7 @@ body {
 .hero {
   width: 100%;
   min-height: 75vh; /* نفس الإحساس بالصورة المرجعية */
-  background-image: url("../assets/images/about.jpg"); /* نفس الصورة */
+  background-image: url("../assets/images/home.jpg"); /* نفس الصورة */
   background-size: cover;       /* مهم */
   background-position: center;  /* مهم */
   background-repeat: no-repeat;
