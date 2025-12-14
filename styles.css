@@ -182,23 +182,34 @@ section {
 
 /* الأيقونة الدائرية */
 .service-icon {
+  position: relative;
   width: 74px;
   height: 74px;
   border-radius: 50%;
-  overflow: hidden;
-  background: #6dd6a8; /* الأخضر المرجعي */
+  background: #6dd6a8; /* الحلقة الخارجية */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
+
+.service-icon::before {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #0f3a5f; /* الحلقة الداخلية الداكنة */
+}
 }
 
 .service-icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;     /* قص ذكي */
-  object-position: center;
+  position: relative;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 1;
 }
 
 /* Responsive */
