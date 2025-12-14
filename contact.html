@@ -40,15 +40,15 @@
     <div class="card contact-wrap">
       <div>
         <h3 style="margin:0 0 10px;font-weight:900">بيانات التواصل</h3>
-        <p style="margin:0 0 10px"><strong>📞</strong> 05XXXXXXXX</p>
-        <p style="margin:0 0 10px"><strong>📧</strong> info@maani-gamah.com</p>
+        <p style="margin:0 0 10px"><strong>📞</strong> 0596808368</p>
+        <p style="margin:0 0 10px"><strong>📧</strong> maani.gamah@gmail.com</p>
         <p class="muted" style="margin:0">أرسل رسالتك وسنتواصل معك.</p>
       </div>
 
-      <form class="contact-form">
-        <input type="text" placeholder="الاسم الكامل" required>
-        <input type="email" placeholder="البريد الإلكتروني" required>
-        <textarea placeholder="اكتب رسالتك هنا..." required></textarea>
+      <form class="contact-form" action="https://formspree.io/f/mdkqbwyb" method="POST">
+        <input type="text" name="name" placeholder="الاسم" required>
+        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+        <textarea name="message" placeholder="رسالتك" required></textarea>
         <button class="btn" type="submit">إرسال</button>
       </form>
     </div>
@@ -65,3 +65,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
