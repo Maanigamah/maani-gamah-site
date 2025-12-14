@@ -299,6 +299,55 @@ section {
 }
 
 /* ================= PROCESS ================= */
+/* ===== Process Icon Circle (Same Gradient Style) ===== */
+.process-step img {
+  width: 26px;
+  height: 26px;
+  position: relative;
+  z-index: 2;
+}
+
+
+transform: translateX(
+/* الدائرة الخارجية */
+.process-step {
+  position: relative;
+}
+
+.process-step::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+ 
+ -50%);
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: rgba(127, 182, 166, 0.35);
+  z-index: 0;
+}
+
+/* الدائرة الوسطى */
+.process-step::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #4F7F7D;
+  z-index: 1;
+}
+
+/* الدائرة الداخلية */
+.process-step img {
+  background: #7FB6A6;
+  border-radius: 50%;
+  padding: 10px;
+}
 .process-card {
   background: rgba(255,255,255,.08);
   border-radius: 28px;
