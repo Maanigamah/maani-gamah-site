@@ -358,14 +358,7 @@ section {
   z-index: 2;
 }
 
-/* الأيقونة */
-/* الأيقونة SVG داخل الدائرة */
-.icon-circle svg {
-  width: 28px;
-  height: 28px;
-  fill: #0b2a5b; /* كحلي واضح */
-  z-index: 5;
-  position: absolute;
+
 }
 
 /* العنوان */
@@ -380,6 +373,17 @@ section {
   font-size: 15px;
   opacity: 0.9;
   line-height: 1.8;
+}
+
+.process-step svg {
+  position: absolute;
+  top: 34px;          /* داخل الدائرة */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  z-index: 5;
+  fill: #0b2a5b;
 }
 
 /* ================= RESPONSIVE ================= */
