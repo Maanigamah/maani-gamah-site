@@ -5,122 +5,217 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>مؤسسة معاني القمة للخدمات اللوجستية</title>
 
-  <!-- سيتم ربط styles.css في المرحلة 2 -->
+  <!-- سيتم ربط ملف styles.css لاحقًا -->
+  <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
 
 <body>
 
-  <!-- ================= NAVBAR ================= -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="logo">معاني القمة</div>
-
-      <ul class="nav-links">
-        <li><a href="#services">خدماتنا</a></li>
-        <li><a href="#about">من نحن</a></li>
-        <li><a href="#process">عملية الخدمة</a></li>
-        <li><a href="contact.html">تواصل معنا</a></li>
-        <li><a href="index-en.html">EN</a></li>
-      </ul>
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <div class="logo">
+      مؤسسة معاني القمة<br>
+      <span>للخدمات اللوجستية</span>
     </div>
-  </nav>
 
-  <!-- ================= HERO ================= -->
-  <header class="hero">
-    <div class="container">
-      <h1>مؤسسة معاني القمة</h1>
-      <h2>للخدمات اللوجستية</h2>
-      <p>
-        حلول شحن متكاملة تشمل الشحن البحري والبري والجوي  
-        مع متابعة دقيقة حتى تسليم الشحنة
-      </p>
-    </div>
-  </header>
+    <ul class="nav-links">
+      <li><a href="#hero">الرئيسية</a></li>
+      <li><a href="#services">خدماتنا</a></li>
+      <li><a href="#about">من نحن</a></li>
+      <li><a href="#process">عملية الخدمة</a></li>
+      <li><a href="#contact">تواصل معنا</a></li>
+    </ul>
+  </div>
+</nav>
 
-  <!-- ================= MAIN IMAGE ================= -->
-  <section class="main-visual">
-    <img src="assets/images/home.jpg" alt="الخدمات اللوجستية المتكاملة">
-  </section>
+<!-- ================= HERO ================= -->
+<header id="hero" class="hero">
+  <div class="hero-content">
+    <h1>معاني القمة</h1>
+    <h2>للخدمات اللوجستية</h2>
+    <p>
+      حلول لوجستية متكاملة تشمل الشحن البحري والبري والجوي
+      مع متابعة دقيقة حتى تسليم الشحنة
+    </p>
+  </div>
 
-  <!-- ================= SERVICES ================= -->
-  <section id="services">
-    <div class="container">
+  <div class="hero-image">
+    <img src="assets/images/hero.jpg" alt="الخدمات اللوجستية">
+  </div>
+</header>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="services">
+  <div class="container">
+
+    <div class="section-title">
       <h2>خدماتنا</h2>
+      <p>نقدم مجموعة من الخدمات اللوجستية المصممة لتلبية احتياجات أعمالكم</p>
+    </div>
 
-      <div class="services-grid">
-        <div class="service-card">
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">
           <img src="assets/images/sea.jpg" alt="الشحن البحري">
+        </div>
+        <div class="service-text">
           <h3>الشحن البحري</h3>
-          <p>حلول شحن بحري للحاويات والبضائع.</p>
-        </div>
-
-        <div class="service-card">
-          <img src="assets/images/land.jpg" alt="الشحن البري">
-          <h3>الشحن البري</h3>
-          <p>نقل بري آمن داخل وخارج المدن.</p>
-        </div>
-
-        <div class="service-card">
-          <img src="assets/images/air.jpg" alt="الشحن الجوي">
-          <h3>الشحن الجوي</h3>
-          <p>شحن جوي سريع للبضائع العاجلة.</p>
+          <p>حلول شحن بحري للحاويات والبضائع مع إجراءات منظمة ومتابعة حتى الوصول.</p>
         </div>
       </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <img src="assets/images/land.jpg" alt="الشحن البري">
+        </div>
+        <div class="service-text">
+          <h3>الشحن البري</h3>
+          <p>نقل بري موثوق داخل المدن وبين المناطق وفق جداول تسليم واضحة.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <img src="assets/images/air.jpg" alt="الشحن الجوي">
+        </div>
+        <div class="service-text">
+          <h3>الشحن الجوي</h3>
+          <p>شحن جوي سريع للبضائع العاجلة مع إدارة كاملة للمستندات.</p>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ================= ABOUT ================= -->
-  <section id="about">
-    <div class="container">
+<!-- ================= ABOUT ================= -->
+<section id="about" class="about">
+  <div class="container">
+
+    <div class="section-title">
       <h2>من نحن</h2>
+      <p>نبذة عن مؤسسة معاني القمة للخدمات اللوجستية</p>
+    </div>
 
-      <div class="about-wrap">
-        <img src="assets/images/about.jpg" alt="من نحن">
+    <div class="about-wrapper">
 
-        <p>
-       نحن كوادر سعودية متخصصة في تقديم الخدمات اللوجستية
-المتكاملة مع شركائنا لتسهيل العمليات اللوجستة لعمﻼئنا بداية
+      <div class="about-card">
+        <h3>مؤسسة معاني القمة للخدمات اللوجستية</h3>
+        <p>نحن كوادر سعودية متخصصة في تقديم الخدمات اللوجستية
+ المتكاملة مع شركائنا لتسهيل العمليات اللوجستة لعمﻼئنا بداية
 من البحث والتقصي عن المنتجات والمصانع ذو جودة عالية ثم
 بعد اكمال إجراءات اﻻستيراد يتم متابعة التصنيع والتاكد من
 جودة المنتجات قبل شحنها الى السعودية ثم إكمال إجراءات
 التخليص الجمركي وإستقبال البضاعة ونقلها الى موقع العميل
         </p>
       </div>
-    </div>
-  </section>
 
-  <!-- ================= PROCESS ================= -->
-  <section id="process">
-    <div class="container">
+      <div class="about-image">
+        <img src="assets/images/about.jpg" alt="من نحن">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section id="process" class="process">
+  <div class="container">
+
+    <div class="section-title">
       <h2>عملية الخدمة</h2>
-
-      <ul class="process-steps">
-        <li>طلب الخدمة</li>
-        <li>تقدير الأسعار</li>
-        <li>متابعة الشحنة</li>
-        <li>التخليص الجمركي</li>
-        <li>تسليم الشحنة</li>
-      </ul>
+      <p>خطوات واضحة ومنظمة لضمان تجربة شحن سلسة</p>
     </div>
-  </section>
 
-  <!-- ================= CONTACT (FOOTER) ================= -->
-  <footer>
-    <div class="container">
-      <h2>راسلنا الآن</h2>
+    <div class="process-card">
 
-      <form>
-        <input type="text" placeholder="اسمك">
-        <input type="email" placeholder="بريدك الإلكتروني">
-        <textarea placeholder="رسالتك"></textarea>
+      <div class="process-grid">
+
+        <div class="process-step">
+          <img src="assets/images/process-1.png" alt="">
+          <h4>طلب الخدمة</h4>
+          <p>استلام تفاصيل الطلب ومتطلبات العميل.</p>
+        </div>
+
+        <div class="process-step">
+          <img src="assets/images/process-2.png" alt="">
+          <h4>تقدير الأسعار</h4>
+          <p>تقديم أفضل العروض وفق نوع الشحنة.</p>
+        </div>
+
+        <div class="process-step">
+          <img src="assets/images/process-3.png" alt="">
+          <h4>طلب التصنيع</h4>
+          <p>تنفيذ الإجراءات المطلوبة مع المورد.</p>
+        </div>
+
+        <div class="process-step">
+          <img src="assets/images/process-4.png" alt="">
+          <h4>متابعة التصنيع</h4>
+          <p>متابعة الإنتاج حتى الجاهزية للشحن.</p>
+        </div>
+
+        <div class="process-step">
+          <img src="assets/images/process-5.png" alt="">
+          <h4>فحص الجودة</h4>
+          <p>التأكد من مطابقة المواصفات.</p>
+        </div>
+
+        <div class="process-step">
+          <img src="assets/images/process-6.png" alt="">
+          <h4>يوم الشحن</h4>
+          <p>تنفيذ الشحن حسب الخطة المحددة.</p>
+        </div>
+
+        <div class="process-step">
+          <img src="assets/images/process-7.png" alt="">
+          <h4>التخليص الجمركي</h4>
+          <p>إنهاء جميع الإجراءات الجمركية.</p>
+        </div>
+
+        <div class="process-step">
+          <img src="assets/images/process-8.png" alt="">
+          <h4>تسليم الشحنة</h4>
+          <p>تسليم الشحنة لموقع العميل.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>تواصل معنا</h2>
+      <p>يسعدنا استقبال استفساراتكم ومراسلتكم</p>
+    </div>
+
+    <div class="contact-card">
+      <p><strong>رقم التواصل:</strong> 0596808368</p>
+
+      <form class="contact-form">
+        <input type="text" placeholder="الاسم" required>
+        <input type="email" placeholder="البريد الإلكتروني" required>
+        <textarea placeholder="رسالتك" required></textarea>
         <button type="submit">إرسال</button>
       </form>
-
-      <p>
-        © جميع الحقوق محفوظة – مؤسسة معاني القمة للخدمات اللوجستية
-      </p>
     </div>
-  </footer>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container">
+    © جميع الحقوق محفوظة – مؤسسة معاني القمة للخدمات اللوجستية
+  </div>
+</footer>
 
 </body>
 </html>
