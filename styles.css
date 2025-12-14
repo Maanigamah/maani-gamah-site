@@ -221,7 +221,7 @@ section {
   z-index: 0;
 }
 .service-icon img {
-  position: relative;
+  position: absolute;
   width: 26px;
   height: 26px;
   z-index: 2;
