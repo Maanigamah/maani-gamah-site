@@ -203,7 +203,7 @@ section {
   width: 74px;
   height: 74px;
   border-radius: 50%;
-  background: #0f3a5f; /* الحلقة الخارجية */
+  background: rgba(127, 182, 166, 0.35);/* الحلقة الخارجية */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,15 +217,23 @@ section {
   width: 58px;
   height: 58px;
   border-radius: 50%;
-  background: #0f3a5f; /* الحلقة الداخلية الداكنة */
+  background: #4F7F7D; /* الحلقة الداخلية الداكنة */
   z-index: 0;
 }
 .service-icon img {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  z-index: 2;
+  fill: #1E3A6D;
+}
+.service-icon::after {
+  content: "";
   position: absolute;
-  width: 58px;
-  height: 58px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
-  object-fit: cover;
+  background: #7FB6A6;
   z-index: 1;
 }
 
