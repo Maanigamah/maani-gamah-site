@@ -359,15 +359,12 @@ section {
 }
 
 /* الأيقونة */
-.process-step img {
-  position: absolute;
-  top: 24px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 36px;
-  height: 36px;
+/* الأيقونة SVG داخل الدائرة */
+.icon-circle svg {
+  width: 28px;
+  height: 28px;
+  fill: #0b2a5b; /* كحلي واضح */
   z-index: 5;
-  filter: none;
 }
 
 /* العنوان */
