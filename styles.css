@@ -298,88 +298,103 @@ section {
   }
 }
 
-/* ================= PROCESS ================= */
-/* ===== Process Icon Circle (Same Gradient Style) ===== */
-.process-step img {
-  width: 26px;
-  height: 26px;
-  position: relative;
-  z-index: 2;
+/* ================= PROCESS SECTION ================= */
+
+.process {
+  background: linear-gradient(180deg, #0b2a5b, #0e3a73);
 }
 
-
-transform: translateX(
-/* الدائرة الخارجية */
-.process-step {
-  position: relative;
+.process-board {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 26px;
+  padding: 50px 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
 }
 
-.process-step::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
- 
- -50%);
-  width: 74px;
-  height: 74px;
-  border-radius: 50%;
-  background: rgba(127, 182, 166, 0.35);
-  z-index: 0;
-}
-
-/* الدائرة الوسطى */
-.process-step::after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  background: #4F7F7D;
-  z-index: 1;
-}
-
-/* الدائرة الداخلية */
-.process-step img {
-  background: #7FB6A6;
-  border-radius: 50%;
-  padding: 10px;
-}
-.process-card {
-  background: rgba(255,255,255,.08);
-  border-radius: 28px;
-  padding: 40px;
-}
-
+/* الشبكة */
 .process-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 26px;
 }
 
+/* كل خطوة */
 .process-step {
+  position: relative;
   text-align: center;
+  padding-top: 100px; /* مساحة للأيقونة */
 }
 
+/* الدائرة الخارجية (تدرج مطابق للصورة المرجعية) */
+.process-step::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(127, 218, 186, 0.35),
+    rgba(127, 218, 186, 0.15)
+  );
+  z-index: 0;
+}
+
+/* الدائرة الداخلية */
+.process-step::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: #7fdaba;
+  z-index: 1;
+}
+
+/* الأيقونة */
 .process-step img {
-  width: 72px;
-  height: 72px;
-  margin-bottom: 14px;
+  position: absolute;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 36px;
+  height: 36px;
+  z-index: 2;
+  filter: brightness(0) saturate(100%) invert(14%) sepia(15%)
+          saturate(1120%) hue-rotate(170deg);
 }
 
+/* العنوان */
 .process-step h4 {
   font-size: 18px;
-  margin-bottom: 6px;
+  font-weight: 800;
+  margin-bottom: 8px;
 }
 
+/* الوصف */
 .process-step p {
-  font-size: 14px;
-  opacity: .85;
+  font-size: 15px;
+  opacity: 0.9;
+  line-height: 1.8;
 }
 
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-board {
+    padding: 30px 20px;
+  }
+}
 /* ================= CONTACT ================= */
 .contact-card {
   background: rgba(255,255,255,.08);
