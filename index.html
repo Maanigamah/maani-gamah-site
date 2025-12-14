@@ -5,170 +5,122 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>مؤسسة معاني القمة للخدمات اللوجستية</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800;900&family=Reem+Kufi+Fun:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles.css">
+  <!-- سيتم ربط styles.css في المرحلة 2 -->
 </head>
+
 <body>
 
-<nav class="navbar">
-  <div class="container nav-inner">
-    <div class="brand">
-      <div class="brand-badge">MG</div>
-      <div class="brand-name">معاني القمة</div>
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">معاني القمة</div>
+
+      <ul class="nav-links">
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#process">عملية الخدمة</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+        <li><a href="index-en.html">EN</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <ul class="nav-links">
-      <li><a href="#services">خدماتنا</a></li>
-      <li><a href="#about">من نحن</a></li>
-      <li><a href="#process">عملية الخدمة</a></li>
-      <li><a href="services.html">صفحة الخدمات</a></li>
-      <li><a href="contact.html">تواصل معنا</a></li>
-      <li><a class="lang-pill" href="index-en.html">EN</a></li>
-    </ul>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="container">
-    <span class="hero-kicker">حلول لوجستية متكاملة</span>
-    <h1 class="hero-title">مؤسسة معاني القمة</h1>
-    <h2 class="hero-sub">للخدمات اللوجستية</h2>
-    <p>
-      نقدم مجموعة متكاملة من الحلول اللوجستية تشمل الشحن البحري والبري والجوي
-      مع متابعة دقيقة حتى تسليم الشحنة.
-    </p>
-  </div>
-</header>
-
-<section>
-  <div class="container">
-    <div class="main-visual">
-      <img src="assets/images/home.jpg" alt="الخدمات اللوجستية المتكاملة">
-      <div class="overlay">
-        <strong>تكامل الخدمات</strong>
-        <span>حل واحد يغطي جميع احتياجاتك اللوجستية</span>
-      </div>
+  <!-- ================= HERO ================= -->
+  <header class="hero">
+    <div class="container">
+      <h1>مؤسسة معاني القمة</h1>
+      <h2>للخدمات اللوجستية</h2>
+      <p>
+        حلول شحن متكاملة تشمل الشحن البحري والبري والجوي  
+        مع متابعة دقيقة حتى تسليم الشحنة
+      </p>
     </div>
-  </div>
-</section>
+  </header>
 
-<section id="services">
-  <div class="container">
-    <div class="section-title">
+  <!-- ================= MAIN IMAGE ================= -->
+  <section class="main-visual">
+    <img src="assets/images/home.jpg" alt="الخدمات اللوجستية المتكاملة">
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section id="services">
+    <div class="container">
       <h2>خدماتنا</h2>
-      <p>نقدّم حلول شحن متكاملة تناسب مختلف احتياجات الأعمال</p>
-    </div>
 
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="photo-icon"><img src="assets/images/sea.jpg" alt="الشحن البحري"></div>
-        <div>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="assets/images/sea.jpg" alt="الشحن البحري">
           <h3>الشحن البحري</h3>
-          <p>حلول شحن بحري للحاويات والبضائع مع متابعة كاملة.</p>
+          <p>حلول شحن بحري للحاويات والبضائع.</p>
         </div>
-      </div>
 
-      <div class="service-card">
-        <div class="photo-icon"><img src="assets/images/land.jpg" alt="الشحن البري"></div>
-        <div>
+        <div class="service-card">
+          <img src="assets/images/land.jpg" alt="الشحن البري">
           <h3>الشحن البري</h3>
-          <p>نقل بري آمن داخل وخارج المدن مع الالتزام بالمواعيد.</p>
+          <p>نقل بري آمن داخل وخارج المدن.</p>
         </div>
-      </div>
 
-      <div class="service-card">
-        <div class="photo-icon"><img src="assets/images/air.jpg" alt="الشحن الجوي"></div>
-        <div>
+        <div class="service-card">
+          <img src="assets/images/air.jpg" alt="الشحن الجوي">
           <h3>الشحن الجوي</h3>
-          <p>شحن جوي سريع للطلبات العاجلة والبضائع الحساسة.</p>
+          <p>شحن جوي سريع للبضائع العاجلة.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="about">
-  <div class="container">
-    <div class="section-title">
+  <!-- ================= ABOUT ================= -->
+  <section id="about">
+    <div class="container">
       <h2>من نحن</h2>
-      <p>خبرة في إدارة الشحن وسلاسل الإمداد حتى التسليم</p>
-    </div>
 
-    <div class="about-wrap">
-      <div class="about-image">
+      <div class="about-wrap">
         <img src="assets/images/about.jpg" alt="من نحن">
-      </div>
 
-      <div class="card">
         <p>
-          مؤسسة معاني القمة للخدمات اللوجستية، مؤسسة متخصصة في تقديم حلول
-          لوجستية متكاملة تشمل الشحن البحري والبري والجوي، إضافة إلى
-          التخليص الجمركي والمتابعة حتى تسليم الشحنة لموقع العميل.
-        </p>
-        <p class="muted" style="margin-top:12px;">
-          نعمل مع شركاء موثوقين لضمان تجربة شحن واضحة وسلسة من عرض السعر حتى التسليم.
+       نحن كوادر سعودية متخصصة في تقديم الخدمات اللوجستية
+المتكاملة مع شركائنا لتسهيل العمليات اللوجستة لعمﻼئنا بداية
+من البحث والتقصي عن المنتجات والمصانع ذو جودة عالية ثم
+بعد اكمال إجراءات اﻻستيراد يتم متابعة التصنيع والتاكد من
+جودة المنتجات قبل شحنها الى السعودية ثم إكمال إجراءات
+التخليص الجمركي وإستقبال البضاعة ونقلها الى موقع العميل
         </p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="process" class="process">
-  <div class="container">
-    <div class="section-title">
+  <!-- ================= PROCESS ================= -->
+  <section id="process">
+    <div class="container">
       <h2>عملية الخدمة</h2>
-      <p>خطوات واضحة من طلب الخدمة حتى استلام الشحنة</p>
-    </div>
 
-    <div class="steps">
-      <div class="step">طلب الخدمة</div>
-      <div class="step">تقدير الأسعار</div>
-      <div class="step">طلب التصنيع</div>
-      <div class="step">متابعة التصنيع</div>
-      <div class="step">فحص الجودة</div>
-      <div class="step">يوم الشحن</div>
-      <div class="step">التخليص الجمركي</div>
-      <div class="step">تسليم الشحنة</div>
+      <ul class="process-steps">
+        <li>طلب الخدمة</li>
+        <li>تقدير الأسعار</li>
+        <li>متابعة الشحنة</li>
+        <li>التخليص الجمركي</li>
+        <li>تسليم الشحنة</li>
+      </ul>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- نموذج تواصل أسفل الصفحة (كما طلبت) -->
-<section id="contact-bottom">
-  <div class="container">
-    <div class="section-title">
+  <!-- ================= CONTACT (FOOTER) ================= -->
+  <footer>
+    <div class="container">
       <h2>راسلنا الآن</h2>
-      <p>سنرد عليك في أقرب وقت</p>
-    </div>
 
-    <div class="card contact-wrap">
-      <div>
-        <h3 style="margin:0 0 10px;font-weight:900">بيانات التواصل</h3>
-        <p style="margin:0 0 10px"><strong>📞</strong> 05XXXXXXXX</p>
-        <p style="margin:0 0 10px"><strong>📧</strong> info@maani-gamah.com</p>
-        <p class="muted" style="margin:0">يمكنك أيضًا استخدام صفحة التواصل المخصصة.</p>
-      </div>
-
-      <form class="contact-form">
-        <input type="text" placeholder="اسمك" required>
-        <input type="email" placeholder="بريدك الإلكتروني" required>
-        <textarea placeholder="رسالتك" required></textarea>
-        <button class="btn" type="submit">إرسال</button>
+      <form>
+        <input type="text" placeholder="اسمك">
+        <input type="email" placeholder="بريدك الإلكتروني">
+        <textarea placeholder="رسالتك"></textarea>
+        <button type="submit">إرسال</button>
       </form>
+
+      <p>
+        © جميع الحقوق محفوظة – مؤسسة معاني القمة للخدمات اللوجستية
+      </p>
     </div>
-  </div>
-</section>
+  </footer>
 
-<footer>
-  <div class="container">
-    © <span id="year"></span> جميع الحقوق محفوظة – مؤسسة معاني القمة للخدمات اللوجستية
-    <div class="mini">maani-gamah.com</div>
-  </div>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
