@@ -221,11 +221,11 @@ section {
   z-index: 0;
 }
 .service-icon img {
-  position: absolute;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
   z-index: 2;
-  fill: #1E3A6D;
 }
 .service-icon::after {
   content: "";
