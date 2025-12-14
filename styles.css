@@ -222,8 +222,8 @@ section {
 }
 .service-icon img {
   position: absolute;
-  width: 26px;
-  height: 26px;
+  width: 100%;
+  height: 100%;
   z-index: 2;
   fill: #1E3A6D;
 }
