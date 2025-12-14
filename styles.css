@@ -203,7 +203,7 @@ section {
   width: 74px;
   height: 74px;
   border-radius: 50%;
-  background: #6dd6a8; /* الحلقة الخارجية */
+  background: #0f3a5f; /* الحلقة الخارجية */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -217,7 +217,7 @@ section {
   width: 58px;
   height: 58px;
   border-radius: 50%;
-  background: #123f83; /* الحلقة الداخلية الداكنة */
+  background: #0f3a5f; /* الحلقة الداخلية الداكنة */
   z-index: 0;
 }
 .service-icon img {
