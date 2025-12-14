@@ -182,20 +182,33 @@ section {
 
 /* الأيقونة الدائرية */
 .service-icon {
-  width: 64px;
-  height: 64px;
+  position: relative;
+  width: 74px;
+  height: 74px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #6dda8a, #3bbfa3);
+  background: rgba(109, 214, 168, 0.25); /* الإطار الخارجي */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
 }
 
+.service-icon::before {
+  content: "";
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #6dd6a8; /* الدائرة الداخلية */
+  position: absolute;
+}
+}
+
 .service-icon img {
   width: 34px;
   height: 34px;
   object-fit: contain;
+  position: relative;
+  z-index: 1;
 }
 
 /* Responsive */
