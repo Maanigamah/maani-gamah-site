@@ -222,28 +222,18 @@
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section id="contact" class="contact">
-  <div class="container">
+<form class="contact-form"
+      action="https://formspree.io/f/mdkqbwyb"
+      method="POST">
 
-    <div class="section-title">
-      <h2>تواصل معنا</h2>
-      <p>يسعدنا استقبال استفساراتكم ومراسلتكم</p>
-    </div>
+  <input type="text" name="name" placeholder="الاسم" required>
 
-    <div class="contact-card">
-      <p><strong>رقم التواصل:</strong></p>
+  <input type="email" name="email" placeholder="البريد الإلكتروني" required>
 
-      <form class="contact-form">
-        <input type="text" placeholder="الاسم" required>
-        <input type="email" placeholder="البريد الإلكتروني" required>
-        <textarea placeholder="رسالتك" required></textarea>
-        <button type="submit">إرسال</button>
-      </form>
-    </div>
+  <textarea name="message" placeholder="رسالتك" required></textarea>
 
-  </div>
-</section>
-
+  <button type="submit">إرسال</button>
+</form>
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
   <div class="container">
@@ -253,6 +243,7 @@
 
 </body>
 </html>
+
 
 
 
